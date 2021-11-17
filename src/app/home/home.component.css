@@ -70,8 +70,6 @@ a {
     margin-left: auto;
 }
 
-.nav-bot a {}
-
 .navbar-toggler {
     background-color: #ffff;
 }
@@ -339,8 +337,6 @@ a {
     font-weight: 600;
     font-size: 40px;
 }
-
-.content1-right-1 {}
 
 .content1-right-1_1 {
     display: flex;

@@ -4,10 +4,12 @@ import { RoomdetailComponent } from './roomdetail/roomdetail.component';
 import { RoomdetailModule } from './roomdetail/roomdetail.module';
 import { GalleryModule } from './gallery/gallery.module';
 import { GalleryComponent } from './gallery/gallery.component';
-
+import { HomeComponent } from './home/home.component';
 const routes: Routes = [
+  {path:'home',component: HomeComponent},
   {path:'roomdetail', component: RoomdetailComponent},
   {path:'galley', component:  GalleryComponent}
+
 ];
 
 @NgModule({

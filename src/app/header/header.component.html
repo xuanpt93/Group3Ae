@@ -5,155 +5,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teamlate7</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
 </head>
 
 <body>
-    <div class="">
-        <header>
-            <div class="header">
-                <div class="navbar-big">
-                    <div class="navbar top">
-                        <div class="contact">
-                            <div class="local">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <a> 205 Main Road, New York</a>
+    <div id="main">
+        <div class="container-fluid">
+            <header>
+                <div class="header ">
+                    <div class="navbar-big">
+                        <div class="navbar nav-top container-fluid row">
+                            <div class="contact col-xl-4 col-lg-7 offset-xl-3 col-md-6 ">
+                                <div class="local">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <a> 205 Main Road, New York</a>
+                                </div>
+                                <div class="telephone">
+                                    <i class="fas fa-phone"></i>
+                                    <a href=""> +89 (456)789 999</a>
+                                </div>
                             </div>
-                            <div class="telephone">
-                                <i class="fas fa-phone"></i>
-                                <a href=""> +89 (456)789 999</a>
+                            <div class="about col-xl-5 col-lg-5 col-md-6 text-end">
+                                <a href="">About Us</a>
+                                <a href="">Sevices</a>
+                                <a href="">Privacy</a>
+                                <a class="fab fa-facebook-f"></a>
+                                <a class="fab fa-twitter"></a>
+                                <a class="fab fa-youtube"></a>
+                                <a class="fab fa-instagram"></a>
                             </div>
                         </div>
-                        <div class="about">
-                            <a href="">About Us</a>
-                            <a href="">Sevices</a>
-                            <a href="">Privacy</a>
-                            <a class="fab fa-facebook-f"></a>
-                            <a class="fab fa-twitter"></a>
-                            <a class="fab fa-youtube"></a>
-                            <a class="fab fa-instagram"></a>
+                        <div class="navbar-bottom container-fluid align-items-center row">
+                            <div class="logo col-xl-3 col-lg-3 col-md-4">
+                                <div class="img-content">
+                                    <img src="img/img-home/Icon.png" alt="">
+                                    <div class="img-content-sm">
+                                        <h1>AVSON</h1>
+                                        <p>Hotel & Room Services</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar navbar-expand-lg nav-bot col-xl-9 col-lg-9 col-md-8">
+                                <div class="container-fluid nav-right">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav mb-2 mb-lg-0">
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fas fa-circle"></i> English </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                HOME
+                                            </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                ROOMS
+                                            </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">ROOMS Grid</a></li>
+                                                    <li><a class="dropdown-item" href="#">ROOMS Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                SERVICES
+                                            </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                NEWS
+                                            </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                GALLERY
+                                            </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                CONTACT
+                                            </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                PAGES
+                                            </a>
+                                            </li>
+                                            <div class="input-group search-btn">
+                                                <!-- <div class="form-outline">
+                                                <input id="search-focus" type="search" id="form1" class="form-control" />
+                                                <label class="form-label" for="form1">Search</label>
+                                            </div> -->
+                                                <button type="button" class="btn btn-primary">
+                                              <i class="fas fa-search"></i>
+                                            </button>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="get-quote">
+                                <p> GET A QUOTE ->
+                                </p>
+                            </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="logo">
-                        <img src="img/logo.jpg" alt="">
-                    </div>
-                    <div class="navbar-bottom">
-                        <nav class="navbar-bot navbar-expand-lg">
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul class="navbar-nav ">
-                                    <li class="nav-item dropdown;">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-circle"></i> English
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" routerLink="roomdetail" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                ROOMS
-                                </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                SERVICES
-                                </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                NEWS
-                                </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" routerLink="galley" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                GALLERY
-                                </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                CONTACT
-                                </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PAGES
-                                </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="search"><i class="fas fa-search"></i></div>
+                    <!-- header poster -->
+                    <div class="poster-big">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="get-quote">
-                                GET A QUOTE ->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="poster">
+                                        <div class="text-shadow">
+                                            <p> Avson</p>
+                                        </div>
+                                        <div class="title-sm">
+                                            <p> Welcome to Avason</p>
+                                        </div>
+                                        <div class="title-big">
+                                            <p> Luxury Living</p>
+                                        </div>
+                                        <div class="get-startd">
+                                            <button type="button">GET STARTED -></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="poster">
+                                        <div class="text-shadow">
+                                            <p> Avson</p>
+                                        </div>
+                                        <div class="title-sm">
+                                            <p> Welcome to Avason</p>
+                                        </div>
+                                        <div class="title-big">
+                                            <p> Luxury Living</p>
+                                        </div>
+                                        <div class="get-startd">
+                                            <button type="button">GET STARTED -></button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </nav>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
                     </div>
+                    <!-- header poster -->
                 </div>
-                <div class="poster">
-                    <div class="title-sm">
-                        <p> Welcome to Avason</p>
-                    </div>
-                    <div class="title-big">
-                        <p> Luxury Living</p>
-                    </div>
-                    <div class="get-startd">
-                        <button type="button" class="">GET STARTED -></button>
-                    </div>
-                    <div class="text-shadow">
-                        <p> Avson</p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="main ">
-
-            </div>
-        </main>
-
+            </header>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/home.js"></script>
 </body>
 
 </html>
