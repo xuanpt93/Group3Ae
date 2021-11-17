@@ -1,3 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .square-top-room {
     height: 500px;
     background-color: #4f4f4f;
@@ -202,7 +214,6 @@
     background-color: #6e6e6e;
     height: 253px;
     width: 100%;
-    border: 1px solid red;
     position: relative;
 }
 
