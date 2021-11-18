@@ -8,6 +8,7 @@
     <title>Teamlate7</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
     <!-- <link rel="stylesheet" href="css/home.css"> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -56,8 +57,8 @@
                             <div class="navbar navbar-expand-lg nav-bot col-xl-9 col-lg-9 col-md-8">
                                 <div class="container-fluid nav-right">
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                                </button>
+                                       <span class="navbar-toggler-icon"></span>
+                                    </button>
                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                         <ul class="navbar-nav mb-2 mb-lg-0">
                                             <li class="nav-item dropdown">
@@ -65,14 +66,14 @@
                                                     <i class="fas fa-circle"></i> English </a>
                                             </li>
                                             <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a class="nav-link dropdown-toggle" routerLink="home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 HOME
                                             </a>
                                             </li>
                                             <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                ROOMS
-                                            </a>
+                                                <a class="nav-link dropdown-toggle" routerLink="roomdetail" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  ROOMS
+                                                 </a>
                                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                     <li><a class="dropdown-item" href="#">ROOMS Grid</a></li>
                                                     <li><a class="dropdown-item" href="#">ROOMS Details</a></li>
@@ -84,16 +85,16 @@
                                             </a>
                                             </li>
                                             <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a class="nav-link dropdown-toggle" routerLink="blog" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 NEWS
-                                            </a>
+                                              </a>
                                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                     <li><a class="dropdown-item" href="#">Blog Grid</a></li>
                                                     <li><a class="dropdown-item" href="#">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <a class="nav-link dropdown-toggle" routerLink="galley" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 GALLERY
                                             </a>
                                             </li>
@@ -111,10 +112,6 @@
                                             </a>
                                             </li>
                                             <div class="input-group search-btn">
-                                                <!-- <div class="form-outline">
-                                                <input id="search-focus" type="search" id="form1" class="form-control" />
-                                                <label class="form-label" for="form1">Search</label>
-                                            </div> -->
                                                 <button type="button" class="btn btn-primary">
                                               <i class="fas fa-search"></i>
                                             </button>
@@ -130,7 +127,7 @@
                         </div>
                     </div>
                     <!-- header poster -->
-                    <div class="poster-big">
+                    <!-- <div class="poster-big">
                         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -180,7 +177,7 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- header poster -->
                 </div>
             </header>

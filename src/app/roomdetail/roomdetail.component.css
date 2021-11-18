@@ -1,3 +1,72 @@
+/*roomdel*/
+
+.poster {
+    height: 600px;
+    background-color: #404551;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.title-sm p {
+    font-size: 40px;
+    margin: 0px;
+    z-index: 2;
+}
+
+.title-sm {
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+.title-big p {
+    margin-right: 0px;
+    font-size: 170px;
+    padding: 0px;
+    z-index: 6;
+}
+
+.title-big {
+    z-index: 5;
+    margin-top: -50px;
+}
+
+.get-startd button {
+    border-radius: 50px;
+    background-color: #fea116;
+    padding: 10px;
+    color: #ffff;
+    border: none;
+    font-size: 15px;
+    padding: 15px 30px;
+}
+
+.get-startd {
+    z-index: 8;
+}
+
+.text-shadow {
+    position: absolute;
+    display: flex;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.text-shadow p {
+    color: #404551;
+    display: flex;
+    font-size: 280px;
+    -webkit-text-stroke: 0.5px #717379;
+}
+
+
+/*rom*/
+
 * {
     box-sizing: border-box;
 }
@@ -224,6 +293,10 @@ a {
     line-height: 28px;
     text-align: center;
     display: block;
+}
+
+main {
+    margin-bottom: 40px;
 }
 
 .footer-room h1 {
