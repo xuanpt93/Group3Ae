@@ -7,7 +7,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { BlogdetailComponent } from './blogdetail/blogdetail.component';
 const routes: Routes = [
-
+  {path:'',component: HomeComponent},
   {path:'home',component: HomeComponent},
   {path:'roomdetail', component: RoomdetailComponent},
   {path:'galley', component:  GalleryComponent},
