@@ -15,14 +15,38 @@
     padding-top: 70px;
 }
 
-.foot-logo {
-    background-color: #fea116;
-    width: 280px;
-    height: 100px;
+.logo {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.img-content {
     background-color: #fea116;
     border-radius: 50px;
     color: #ffff;
-    margin-bottom: 20px;
+    width: 300px;
+    height: 100px;
+}
+
+.img-content img {
+    color: #ffff;
+    margin-right: 10px;
+}
+
+.img-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-content-sm h1 {
+    margin: 0px;
+    font-size: 40px;
+}
+
+.img-content-sm p {
+    margin-top: -5px;
+    font-size: 12px;
 }
 
 .foot-des1-1,

@@ -1,0 +1,91 @@
+<div class="container-fluid">
+    <div class="poster-big">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="poster">
+                        <div class="text-shadow">
+                            <p> Blog</p>
+                        </div>
+                        <div class="title-sm">
+                            <p> Welcome to Avason</p>
+                        </div>
+                        <div class="title-big">
+                            <p style="font-weight: bold;"> Blog Grid</p>
+                        </div>
+                        <div class="get-startd">
+                            <button type="button">GET STARTED -></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="poster">
+                        <div class="text-shadow">
+                            <p> Avson</p>
+                        </div>
+                        <div class="title-sm">
+                            <p> Welcome to Avason</p>
+                        </div>
+                        <div class="title-big">
+                            <p> Luxury Living</p>
+                        </div>
+                        <div class="get-startd">
+                            <button type="button">GET STARTED -></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+        </div>
+    </div>
+    <main>
+
+        <div class="container">
+            <div class="featurn_posts">
+                <div class="row">
+                    <div class="col-md-6 col-xl-4" *ngFor="let b of bloggrids">
+                        <div class="feature-iteam">
+                            <div class="feature-img">
+                                <div><img class="img-house" src="{{b.Image}}" alt=""></div>
+                            </div>
+                            <div class="feature-icon-date">
+                                <div class="d-flex">
+                                    <div class="feature-icon">
+                                        <img src="{{b.Images}}" alt="">
+                                    </div>
+                                    <div class="feature-date">
+                                        {{b.Date}}
+                                    </div>
+                                </div>
+                                <div class="feature-text">
+                                    <p>{{b.text}}</p>
+                                </div>
+                                <a href="">Read More -></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="styte-buton">
+                <button><</button>
+                <button>01</button>
+                <button>02</button>
+                <button>03</button>
+                <button>></button>
+            </div>
+        </div>
+    </main>
+
+</div>
