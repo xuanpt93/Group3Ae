@@ -16,7 +16,6 @@
 }
 
 .logo {
-    width: 50%;
     margin-bottom: 30px;
 }
 
@@ -157,8 +156,6 @@
     color: #717379;
 }
 
-@media (min-width: 1200px) {}
-
 .footer-top {
     padding-top: 100px;
     width: 100%;
@@ -176,6 +173,14 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
+    flex-wrap: nowrap;
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.footer-top1::-webkit-scrollbar {
+    display: none;
 }
 
 .foot-top1 {
