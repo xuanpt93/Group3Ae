@@ -1,9 +1,9 @@
-* {
+/* * {
     box-sizing: border-box;
 }
 
 .container-fluid {
-    /* width: 100%; */
+
     padding: 0px;
 }
 
@@ -203,3 +203,4 @@ a {
     font-size: 280px;
     -webkit-text-stroke: 0.5px #717379;
 }
+*/

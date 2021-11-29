@@ -1,4 +1,4 @@
-       /*css headr home*/
+       /* css headr home
 
        .poster {
            height: 600px;
@@ -64,8 +64,7 @@
            -webkit-text-stroke: 0.5px #717379;
        }
        /*css homde hdae*/
-
-       * {
+       /* * {
            box-sizing: border-box;
            padding: 0;
            margin: 0;
@@ -73,9 +72,9 @@
 
        ul {
            list-style-type: none;
-       }
+       } */
        /*css our gallery*/
-
+       /*
        #main {
            margin: 0 auto;
            padding-bottom: 40px;
@@ -222,5 +221,4 @@
            .container-xl {
                width: 1200px;
            }
-       }
-       /*css our gallery*/
+       } */
