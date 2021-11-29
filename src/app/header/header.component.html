@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teamlate7</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-
-    <!-- <link rel="stylesheet" href="css/home.css"> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-
-</head>
-
 <body>
     <div id="main">
         <div class="container-fluid">
@@ -47,7 +28,7 @@
                         <div class="navbar-bottom container-fluid align-items-center row">
                             <div class="logo col-xl-3 col-lg-3 col-md-4">
                                 <div class="img-content">
-                                    <img src="img/img-home/Icon.png" alt="">
+                                    <img src="assets/img/img-home/icon.png" alt="">
                                     <div class="img-content-sm">
                                         <h1>AVSON</h1>
                                         <p>Hotel & Room Services</p>
@@ -90,7 +71,7 @@
                                               </a>
                                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                     <li><a class="dropdown-item" routerLink="blog-grid">Blog Grid</a></li>
-                                                    <li><a class="dropdown-item" routerLink="blog">Blog Details</a></li>
+                                                    <li><a class="dropdown-item" routerLink="blogdetail">Blog Details</a></li>
                                                 </ul>
                                             </li>
                                             <li class="nav-item dropdown">
@@ -126,64 +107,47 @@
                             </div>
                         </div>
                     </div>
-                    <!-- header poster -->
-                    <!-- <div class="poster-big">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="poster">
-                                        <div class="text-shadow">
-                                            <p> Avson</p>
-                                        </div>
-                                        <div class="title-sm">
-                                            <p> Welcome to Avason</p>
-                                        </div>
-                                        <div class="title-big">
-                                            <p> Luxury Living</p>
-                                        </div>
-                                        <div class="get-startd">
-                                            <button type="button">GET STARTED -></button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="poster">
-                                        <div class="text-shadow">
-                                            <p> Avson</p>
-                                        </div>
-                                        <div class="title-sm">
-                                            <p> Welcome to Avason</p>
-                                        </div>
-                                        <div class="title-big">
-                                            <p> Luxury Living</p>
-                                        </div>
-                                        <div class="get-startd">
-                                            <button type="button">GET STARTED -></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                        </div>
-                    </div> -->
-                    <!-- header poster -->
                 </div>
             </header>
         </div>
     </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <script src="../js/home.js"></script>
 </body>
-
-</html>

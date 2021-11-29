@@ -9,6 +9,9 @@ import { BlogdetailComponent } from './blogdetail/blogdetail.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { BlogGridComponent } from './blog-grid/blog-grid.component';
+import { RoomGridComponent } from './room-grid/room-grid.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { HomeComponent } from './home/home.component';
     BlogdetailComponent,
     HeaderComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    AboutUsComponent,
+    BlogGridComponent,
+    RoomGridComponent
   ],
   imports: [
     BrowserModule,
