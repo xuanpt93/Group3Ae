@@ -6,7 +6,6 @@
 
 .container-fluid {
     padding: 0px;
-  margin: 0px;
 }
 
 .contact {
@@ -2224,7 +2223,7 @@ a {
 
 /*css Gallery*/
 
-#main {
+#gallery-main {
     margin: 0 auto;
     padding-bottom: 40px;
 }
@@ -2259,12 +2258,12 @@ a {
     color: #ffff;
 }
 
-.main-menu {
-    margin-bottom: 60px;
+#gallery-main-menu {
+    display: flex;
+    justify-content: center;
 }
 
 .ul-main-menu {
-    padding-left: 110px;
     margin-top: 80px;
     margin-bottom: 40px;
 }
@@ -2292,11 +2291,11 @@ a {
     visibility: hidden;
 }
 
-#main-conten1 {
+#main-conten-g1 {
     display: none;
 }
 
-#main-conten2 {
+#main-conten-g2 {
     display: none;
 }
 
@@ -2304,7 +2303,7 @@ a {
     padding: 10px;
 }
 
-.container-main {
+.gallery-container-main {
     margin: 0 auto;
 }
 
@@ -2355,11 +2354,13 @@ a {
 .item-main-conten-i {
     color: #ffff;
     font-size: 20px;
-    line-height: 50px;
     background-color: #fea116;
     height: 50px;
     width: 50px;
+    line-height: 50px;
     border-radius: 50%;
+    display: table;
+    vertical-align: middle;
 }
 
 @media (min-width:1200px) {
