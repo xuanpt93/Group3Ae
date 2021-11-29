@@ -995,8 +995,6 @@ a {
     padding-top: 20px;
 }
 
-.home-header-main {}
-
 .i-input-form-blog i {
     color: #000;
 }
@@ -1602,7 +1600,7 @@ a {
     display: block;
 }
 
-main {
+#rd-main {
     margin-bottom: 40px;
 }
 
@@ -2065,4 +2063,158 @@ main {
 /*---------------------------------------------------------------------------*/
 
 
-/*csss Huynh*/
+/*css Gallery*/
+
+#main {
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.section-header {
+    position: relative;
+}
+
+.img-header img {
+    width: 100%;
+    height: 512px;
+}
+
+.ul-header {
+    position: absolute;
+    justify-content: center;
+    left: 540px;
+    top: 50%;
+}
+
+.ul-header li a {
+    color: #ffff;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ul-header li a {
+    color: #fea116;
+}
+
+.ul-header li:last-child a {
+    color: #ffff;
+}
+
+.main-menu {
+    margin-bottom: 60px;
+}
+
+.ul-main-menu {
+    padding-left: 110px;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.ul-main-menu li a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f172b;
+    line-height: 38px;
+    margin-right: 20px;
+}
+
+.ul-main-menu li:hover a {
+    color: #fea116;
+}
+
+.ul-main-menu li:hover a i {
+    visibility: visible;
+}
+
+.i-main-menu {
+    margin-right: 20px;
+    width: 20px;
+    color: #fea116;
+    visibility: hidden;
+}
+
+#main-conten1 {
+    display: none;
+}
+
+#main-conten2 {
+    display: none;
+}
+
+.col4-item {
+    padding: 10px;
+}
+
+.container-main {
+    margin: 0 auto;
+}
+
+.item-main-conten {
+    height: 360px;
+    width: 100%;
+    background-color: #515151;
+    position: relative;
+}
+
+.col4-item:hover div {
+    background-color: #292e3a;
+    visibility: visible;
+}
+
+.item-main-conten1 {
+    height: 360px;
+    width: 100%;
+    background-color: rgb(182, 247, 96);
+}
+
+.item-main-conten2 {
+    height: 360px;
+    width: 100%;
+    background-color: rgb(97, 75, 223);
+}
+
+.sub-main-item {
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    right: 20px;
+    visibility: hidden;
+}
+
+.sub-main-item-p {
+    padding-top: 35px;
+    padding-left: 35px;
+    visibility: hidden;
+}
+
+.sub-main-item-p p {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.item-main-conten-i {
+    color: #ffff;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: #fea116;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media (min-width:1200px) {
+    .container-main,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        width: 1200px;
+    }
+}
+
+
+/*css Gallery*/
+
+
+/*---------------------------------------------------------------------------*/
