@@ -2376,3 +2376,271 @@ a {
 
 
 /*---------------------------------------------------------------------------*/
+
+
+
+
+/* -----------------------------------------------css của huynh----------------------- */
+              /* css phần about-us */
+.about-us{
+  margin-top: 130px;
+}
+.about-text-about-us{
+  color: rgb(254,161,22);
+  float: right;
+  font-size: 18px;
+}
+.about-text-welcome{
+  font-weight: bold;
+  font-size: 50px;
+  float: left;
+  color: rgb(15, 23, 43);
+}
+.about-text-introduce{
+  font-size: 18px;
+}
+
+.about-abc{
+  padding: 0 20px;
+}
+.about-text-1-1{
+  margin-bottom: 70px;
+}
+.about-iteam-col12 {
+  position: relative;
+  width: 1170;
+  height: 572px;
+  background-color: rgb(30, 44, 128);
+}
+
+.about-iteam-col5{
+  transform: translateY(-25%);
+  margin-left: 70px;
+  background-color: rgb(241,248,255);
+  padding: 65px;
+}
+
+.about-get-startdcc button {
+  border-radius: 50px;
+  background-color: #fea116;
+  padding: 10px;
+  color: #ffff;
+  border: none;
+  margin-top: 30px;
+  float: left;
+}
+.about-get-startdcc{
+  padding-bottom: 80px;
+}
+.about-iteam-col5-text-1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.about-icon-number-text{
+  text-align: center;
+  padding-top: 100px;
+}
+.about-min-number{
+  font-size: 60px;
+}
+.about-bg-tranform-img{
+  margin-bottom: 130px;
+}
+.about-bg-image{
+  background-image: url(../img/img/03_About_Us_02.jpg);
+  height: 661px;
+}
+.about-feature-iteam{
+  transform: translateY(-250px);
+  background-color: rgb(255,255,255);
+}
+.about-img-house{
+  width: 100%;
+  height: 250px;
+}
+.about-feature-text1-text2{
+  padding:30px 25px;
+}
+.about-feature-text1-text2 > a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.about-feature-text1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+.about-conten-explore{
+  text-align: center;
+  margin-bottom: 70px;
+}
+.about-conten-explore-text1{
+  color: rgb(254,161,22);
+  font-weight: bolder;
+}
+.about-conten-explore-text2{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 25px;
+}
+.about-feature2-iteam{
+  padding: 80px 10px;
+  text-align: center;
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgb(233, 233, 234);
+  margin-bottom: 130px;
+  box-shadow: 6px 6px 0px rgb(233, 233, 234);
+}
+.about-feature2-text1{
+  font-weight: bold;
+  font-size: 25px;
+}
+.about-feature2-iteam a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 20px;
+}
+.about-bg-acbcxyz{
+  height: 1210px;
+  background: rgb(241,248,255);
+}
+.about-feature3-iteam{
+
+  background-color: #fff;
+  position: relative;
+}
+.about-feature3-iteam-text1{
+  font-size: 30px;
+}
+.about-feature3-iteam-text2{
+  padding-left: 6px;
+  color: rgb(15, 23, 45);
+  font-weight: bold;
+}
+.about-feature3-iteam-padding{
+  padding: 60px;
+}
+.about-feature3-iteam-icon2{
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+
+}
+.about-feature3-iteam:hover {
+  border-width: 10px;
+  border-style: solid;
+  border-color: rgb(254,161,22);
+}
+
+/* ------------------------kết thúc about-------------- */
+
+/* css phần Blog-Grid */
+.bloggrid-img-house{
+  width: 100%;
+  height: 245px;
+}
+.bloggrid-feature-iteam{
+  margin-bottom: 60px;
+  background-color: rgb(255,255,255);
+}
+.bloggrid-feature-text{
+  margin-top: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.bloggrid-feature-icon-date{
+  padding:50px 25px;
+}
+.bloggrid-feature-date{
+  padding-left: 15px;
+}
+.blog-grid{
+  background-color: rgb(241,248,255);
+  padding-top: 130px;
+}
+.bloggrid-feature-icon-date > a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+.container .bloggrid-styte-buton button {
+  border-radius: 100px;
+  background-color: rgb(60, 74, 109);
+  font-size: 25px;
+  color: #ffff;
+}
+.bloggrid-styte-buton{
+  text-align: center;
+}
+.container .bloggrid-styte-buton button:hover {
+  background-color: #fea116;
+}
+
+/* ----------------------kết thúc blog----------------- */
+
+
+/* css phần Room-Grid */
+.rg-img-house{
+  width: 100%;
+  height: 245px;
+}
+.rg-feature-iteam{
+  margin-bottom: 60px;
+  background-color: rgb(255,255,255);
+}
+.rg-feature-text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.rg-feature-title-bg{
+  padding:30px;
+}
+.rg{
+  background-color: rgb(241,248,255);
+  padding-top: 130px;
+}
+.rg-feature-title{
+  padding-top: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.rg-price {
+  background-color: #fea116;
+  border-radius: 5px;
+  color: #ffff;
+  border: none;
+  margin-top: 10px;
+}
+.container .rg-styte-buton button {
+  border-radius: 100px;
+  background-color: rgb(60, 74, 109);
+  font-size: 25px;
+  color: #ffff;
+}
+.rg-styte-buton{
+  text-align: center;
+}
+.container .rg-styte-buton button:hover {
+  background-color: #fea116;
+}
+.rg-feature-iteam-tranform2 button {
+  border-radius: 10px;
+  background-color: #fea116;
+  padding: 3px 10px;
+  color: #ffff;
+  border: none;
+}
+.rg-feature-iteam-tranform2{
+  transform: translateY(-50%);
+  float: left;
+  padding-left: 20px;
+}
+.rg-feature-icon-title .icon8{
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+/* -----------------------kết thúc rom grid----------- */
