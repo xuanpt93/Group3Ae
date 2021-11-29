@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <title>Gallery</title>
 
 </head>
@@ -64,76 +65,76 @@
                 </div>
             </div>
         </div>
-        <main id="main">
-            <div class="container container-main ">
-                <div id="main-menu ">
-                    <ul class="ul-main-menu nav">
-                        <li class="nav-item active " *ngFor="let x of gallays"><a class="nav-link actvive" href=""><i class="fas i-main-menu show active fa-arrow-right"></i>{{x.txt}}</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <div id="main-conten">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
-                                    <div class="item-main-conten">
-                                        <div class="sub-main-item-p">
-                                            <p> {{x.name}}</p>
+        <main id="gallery-main">
+            <div class="container">
+                <div class="gallery-container-main">
+                    <div id="gallery-main-menu">
+                        <ul class="ul-main-menu nav">
+                            <li class="nav-item active " *ngFor="let x of gallays"><a class="nav-link actvive" href=""><i class="fas i-main-menu show active fa-arrow-right"></i>{{x.txt}}</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div id="main-conten-g">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
+                                        <div class="item-main-conten">
+                                            <div class="sub-main-item-p">
+                                                <p> {{x.name}}</p>
+                                            </div>
+                                            <div class="sub-main-item">
+                                                <i class="fas fa-arrow-right item-main-conten-i"></i>
+                                            </div>
                                         </div>
-                                        <div class="sub-main-item">
-                                            <i class="fas fa-arrow-right item-main-conten-i"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="main-conten-g1">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
+                                        <div class="item-main-conten">
+                                            <div class="sub-main-item-p">
+                                                <p> {{x.name}}</p>
+                                            </div>
+                                            <div class="sub-main-item">
+                                                <i class="fas fa-arrow-right item-main-conten-i"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="main-conten-g2">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
+                                        <div class="item-main-conten">
+                                            <div class="sub-main-item-p">
+                                                <p> {{x.name}}</p>
+                                            </div>
+                                            <div class="sub-main-item">
+                                                <i class="fas fa-arrow-right item-main-conten-i"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="main-conten1">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
-                                    <div class="item-main-conten">
-                                        <div class="sub-main-item-p">
-                                            <p> {{x.name}}</p>
-                                        </div>
-                                        <div class="sub-main-item">
-                                            <i class="fas fa-arrow-right item-main-conten-i"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="main-conten2">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
-                                    <div class="item-main-conten">
-                                        <div class="sub-main-item-p">
-                                            <p> {{x.name}}</p>
-                                        </div>
-                                        <div class="sub-main-item">
-                                            <i class="fas fa-arrow-right item-main-conten-i"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled"><a class="page-link" href="javascrip:void(0)">Previous</a></li>
-                        <li class="page-item"><a id="a-li" class="page-link" href="javascrip:void(0)">01</a></li>
-                        <li class="page-item"><a id="a-li1" class="page-link" href="javascrip:void(0)">02</a></li>
-                        <li class="page-item"><a id="a-li2" class="page-link" href="javascrip:void(0)">03</a></li>
-                        <li class="page-item"><a id="next1" class="page-link" href="javascrip:void(0)">Next</a></li>
-                    </ul>
-                </nav>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="javascrip:void(0)">Previous</a></li>
+                            <li class="page-item"><a id="a-li" class="page-link" href="javascrip:void(0)">01</a></li>
+                            <li class="page-item"><a id="a-li1" class="page-link" href="javascrip:void(0)">02</a></li>
+                            <li class="page-item"><a id="a-li2" class="page-link" href="javascrip:void(0)">03</a></li>
+                            <li class="page-item"><a id="next1" class="page-link" href="javascrip:void(0)">Next</a></li>
+                        </ul>
+                    </nav>
 
+                </div>
             </div>
-
-
         </main>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
