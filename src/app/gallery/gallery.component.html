@@ -77,42 +77,14 @@
                         <div id="main-conten-g">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
+                                    <div [ngClass]="{'acti9': k % 2 == 0, 'col-12 col-4 col-sm-6 col-md-4 col4-item': true}" *ngFor="let x of pageData; let k = index ">
+                                        <h3>{{k}}</h3>
                                         <div class="item-main-conten">
+                                            <div class="galley-item-conten">
+                                                <img src="{{x.gimg1}}" alt="">
+                                            </div>
                                             <div class="sub-main-item-p">
-                                                <p> {{x.name}}</p>
-                                            </div>
-                                            <div class="sub-main-item">
-                                                <i class="fas fa-arrow-right item-main-conten-i"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="main-conten-g1">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
-                                        <div class="item-main-conten">
-                                            <div class="sub-main-item-p">
-                                                <p> {{x.name}}</p>
-                                            </div>
-                                            <div class="sub-main-item">
-                                                <i class="fas fa-arrow-right item-main-conten-i"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="main-conten-g2">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of squares">
-                                        <div class="item-main-conten">
-                                            <div class="sub-main-item-p">
-                                                <p> {{x.name}}</p>
+                                                <p>{{x.name}}</p>
                                             </div>
                                             <div class="sub-main-item">
                                                 <i class="fas fa-arrow-right item-main-conten-i"></i>
@@ -123,15 +95,11 @@
                             </div>
                         </div>
                     </div>
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled"><a class="page-link" href="javascrip:void(0)">Previous</a></li>
-                            <li class="page-item"><a id="a-li" class="page-link" href="javascrip:void(0)">01</a></li>
-                            <li class="page-item"><a id="a-li1" class="page-link" href="javascrip:void(0)">02</a></li>
-                            <li class="page-item"><a id="a-li2" class="page-link" href="javascrip:void(0)">03</a></li>
-                            <li class="page-item"><a id="next1" class="page-link" href="javascrip:void(0)">Next</a></li>
-                        </ul>
-                    </nav>
+                    <div class="gallery-div-page">
+                        <button class="glery-btn-page" [disabled]="currentPage == 1" (click)="prepage()"><i class="fas fa-chevron-left"></i></button>
+                        <button class="glery-btn-page" [ngClass]="{'active': (i+1) == currentPage}" (click)="loadPaginate(i+1)" *ngFor="let n of pages; let i = index">{{i+1}}</button>
+                        <button class="glery-btn-page" [disabled]="currentPage == 3" (click)="nextpage()"><i class="fas fa-chevron-right"></i></button>
+                    </div>
 
                 </div>
             </div>
