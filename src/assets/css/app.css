@@ -13,8 +13,10 @@
 }
 
 .nav-top {
+    width: 100%;
     display: flex;
     padding: 20px;
+    margin: 0px;
 }
 
 .contact a {
@@ -75,8 +77,18 @@ a {
     background-color: #ffff;
 }
 
+.nav-item {
+    font-size: 14px;
+}
+
 .nav-item>a {
     color: #ffff;
+}
+
+.nav-link {
+    padding: 0px;
+    margin: 0px;
+    line-height: 36px;
 }
 
 .fa-circle {
@@ -108,15 +120,15 @@ a {
 .logo {
     position: relative;
     top: 50%;
-    left: 4%;
-    transform: translate(0%, -50%);
+    left: 0%;
+    transform: translateY(-50%);
 }
 
 .img-content {
     background-color: #fea116;
     border-radius: 50px;
     color: #ffff;
-    width: 300px;
+    width: 270px;
     height: 100px;
 }
 
@@ -205,6 +217,13 @@ a {
     -webkit-text-stroke: 0.5px #717379;
 }
 
+@media screen and (min-width: 1200px) {
+    .nav-link {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
 
 /*header */
 
@@ -214,6 +233,7 @@ a {
 .footer-container {
     background-color: #0f172b;
     width: 100%;
+    margin-top: 100px;
 }
 
 .footer-container {
@@ -232,13 +252,7 @@ a {
     padding-top: 70px;
 }
 
-.foot-logo {
-    background-color: #fea116;
-    width: 280px;
-    height: 100px;
-    background-color: #fea116;
-    border-radius: 50px;
-    color: #ffff;
+.logo-bottom {
     margin-bottom: 20px;
 }
 
@@ -350,8 +364,6 @@ a {
     color: #717379;
 }
 
-@media (min-width: 1200px) {}
-
 .footer-top {
     padding-top: 100px;
     width: 100%;
@@ -369,6 +381,14 @@ a {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+.footer-top1::-webkit-scrollbar {
+    display: none;
 }
 
 .foot-top1 {
@@ -1781,6 +1801,7 @@ a {
     padding: 0px;
     font-weight: 800px;
     font-size: 20px;
+    border-radius: 7px;
 }
 
 .input-wrap {
@@ -1828,8 +1849,7 @@ a {
     color: #ffff;
     background-color: #fea116;
     padding: 30px;
-    width: 55%;
-    height: 200px;
+    width: 65%;
     position: absolute;
     bottom: -5%;
     right: 0%;
@@ -1901,7 +1921,7 @@ a {
     z-index: 1;
 }
 
-.content2-1 {
+.content2-left {
     color: #ffff;
     padding-left: 20px;
 }
@@ -2047,12 +2067,10 @@ a {
 }
 
 .box1 {
-    height: 330px;
     margin-bottom: 35px;
 }
 
 .box1-content {
-    height: 330px;
     border: 2px solid #dfe9f4;
     padding: 50px 30px;
 }
@@ -2115,6 +2133,7 @@ a {
     color: #ffff;
     z-index: 10;
     margin-top: 20px;
+    line-height: 50px;
 }
 
 .des4 {
@@ -2131,7 +2150,133 @@ a {
 }
 
 
-/* danh cho xs */
+/* Screen cho home ****************************************/
+
+@media screen and (max-width: 1200px) {
+    .title1-right span {
+        font-size: 18px;
+    }
+    .title1-right h1 {
+        font-size: 30px;
+    }
+    .title1-right p {
+        font-size: 18px;
+    }
+    .content1-right-1 img {
+        width: 80%;
+        height: auto;
+    }
+    .content1-right-1 b {
+        font-size: 25px;
+    }
+    .content1-right-1 span {
+        font-size: 13px;
+    }
+    .content2-2::-webkit-scrollbar {
+        display: none;
+    }
+    .content2-2 {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .text-shadow p {
+        font-size: 180px;
+    }
+    .title-sm p {
+        font-size: 50px;
+    }
+    .title-big p {
+        font-size: 120px;
+    }
+    .get-startd {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .text-shadow p {
+        font-size: 130px;
+    }
+    .title-sm p {
+        font-size: 40px;
+    }
+    .title-big p {
+        font-size: 90px;
+    }
+    .get-startd {
+        font-size: 30px;
+    }
+    .content1 {
+        padding-top: 800px;
+    }
+    .content1-left {
+        margin-bottom: 50px;
+    }
+    .content1-right-1_1 img {
+        width: 60%;
+    }
+    .content2-main {
+        padding: 80px 30px;
+        background-color: #f1f8ff;
+    }
+    .content2-main::after {
+        left: 0;
+        width: 100%;
+        height: 60.9%;
+    }
+    .content2-left {
+        margin-bottom: 50px;
+        background-color: #0f172b;
+    }
+    .cont2-2 {
+        background-color: #ffff;
+        padding: 0px;
+    }
+    .title4-1 h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .title4-1 h1 {
+        font-size: 90px;
+    }
+    .button4 p {
+        font-size: 18px;
+    }
+    .des4 p {
+        font-size: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-shadow p {
+        font-size: 90px;
+    }
+    .title-sm p {
+        font-size: 30px;
+    }
+    .title-big p {
+        font-size: 80px;
+    }
+    .get-startd {
+        font-size: 20px;
+    }
+    .title4-1 h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .title4-1 h1 {
+        font-size: 60px;
+    }
+    .button4 p {
+        font-size: 18px;
+        margin: 0px;
+    }
+    .des4 {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 576px) {
     .booking,
@@ -2140,7 +2285,7 @@ a {
         width: 90%;
     }
     .text-shadow p {
-        font-size: 150px;
+        font-size: 100px;
     }
     .title-sm p {
         font-size: 20px;
@@ -2182,22 +2327,13 @@ a {
         width: 100%;
         height: 60.9%;
     }
-    .content2-1 {
+    .content2-left {
         margin-bottom: 50px;
         background-color: #0f172b;
     }
     .cont2-2 {
-        background-color: #f1f8ff;
+        background-color: #ffff;
         padding: 0px;
-    }
-    .content2-2 .col-xl-4 {
-        padding: 0px;
-    }
-    .content2-2 .col-xl-4:nth-child(2) {
-        display: none;
-    }
-    .content2-2 .col-xl-4:nth-child(3) {
-        display: none;
     }
     .content3 {
         margin-top: 200px;
@@ -2205,9 +2341,14 @@ a {
     .title3-2 h1 {
         font-size: 25px;
     }
+    .title4-1 h2 {
+        font-size: 20px;
+    }
     .title4-1 h1 {
         font-size: 60px;
-        margin-top: 20px;
+    }
+    .button4 {
+        font-size: 20px;
     }
     .des4 p {
         display: none;
