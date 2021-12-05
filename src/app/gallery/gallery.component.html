@@ -68,8 +68,8 @@
         <main id="gallery-main">
             <div class="container">
                 <div class="gallery-container-main">
-                    <div id="gallery-main-menu">
-                        <ul class="ul-main-menu nav">
+                    <div id="gallery-main-menu ">
+                        <ul class="ul-main-menu nav col-4 col-md-12  col-sm-7">
                             <li class="nav-item active " *ngFor="let x of gallays"><a class="nav-link actvive" href=""><i class="fas i-main-menu show active fa-arrow-right"></i>{{x.txt}}</a></li>
                         </ul>
                     </div>
@@ -77,18 +77,19 @@
                         <div id="main-conten-g">
                             <div class="container">
                                 <div class="row">
-                                    <div [ngClass]="{'acti9': k % 2 == 0, 'col-12 col-4 col-sm-6 col-md-4 col4-item': true}" *ngFor="let x of pageData; let k = index ">
+                                    <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of pageData; let k = index ">
                                         <h3>{{k}}</h3>
                                         <div class="item-main-conten">
-                                            <div class="galley-item-conten">
-                                                <img src="{{x.gimg1}}" alt="">
-                                            </div>
                                             <div class="sub-main-item-p">
                                                 <p>{{x.name}}</p>
                                             </div>
                                             <div class="sub-main-item">
                                                 <i class="fas fa-arrow-right item-main-conten-i"></i>
                                             </div>
+                                            <div class="galley-item-conten-image">
+                                                <img src="{{x.image1}}" alt="anh ">
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>

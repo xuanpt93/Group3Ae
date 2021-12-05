@@ -19,10 +19,25 @@ button.active {
     font-weight: bold;
 }
 
-div.acti9 .item-main-conten {
-    background-color: aqua;
+.galley-item-conten-image img {
+    width: 100%;
 }
 
-div.acti18 .item-main-conten {
-    background-color: blue;
+.item-main-conten:hover div {
+    background-color: #292e3a2c;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+}
+
+.sub-main-item-p {
+    position: absolute;
+}
+
+.galley-item-conten-image {
+    position: absolute;
+}
+
+.item-main-conten {
+    position: relative;
 }

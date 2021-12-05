@@ -69,10 +69,6 @@ a {
     margin-right: 20px;
 }
 
-.nav-item:nth-child(1) {
-    margin-left: auto;
-}
-
 .navbar-toggler {
     background-color: #ffff;
 }
@@ -2407,6 +2403,8 @@ a {
 .ul-main-menu {
     margin-top: 80px;
     margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .ul-main-menu li a {
@@ -2447,10 +2445,11 @@ a {
     position: relative;
 }
 
-.col4-item:hover div {
+
+/* .col4-item:hover div {
     background-color: #292e3a;
     visibility: visible;
-}
+} */
 
 .item-main-conten1 {
     height: 360px;
