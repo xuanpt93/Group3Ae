@@ -6,7 +6,6 @@
 
 .container-fluid {
     padding: 0px;
-  margin: 0px;
 }
 
 .contact {
@@ -14,8 +13,10 @@
 }
 
 .nav-top {
+    width: 100%;
     display: flex;
     padding: 20px;
+    margin: 0px;
 }
 
 .contact a {
@@ -68,16 +69,22 @@ a {
     margin-right: 20px;
 }
 
-.nav-item:nth-child(1) {
-    margin-left: auto;
-}
-
 .navbar-toggler {
     background-color: #ffff;
 }
 
+.nav-item {
+    font-size: 14px;
+}
+
 .nav-item>a {
     color: #ffff;
+}
+
+.nav-link {
+    padding: 0px;
+    margin: 0px;
+    line-height: 36px;
 }
 
 .fa-circle {
@@ -109,15 +116,15 @@ a {
 .logo {
     position: relative;
     top: 50%;
-    left: 4%;
-    transform: translate(0%, -50%);
+    left: 0%;
+    transform: translateY(-50%);
 }
 
 .img-content {
     background-color: #fea116;
     border-radius: 50px;
     color: #ffff;
-    width: 300px;
+    width: 270px;
     height: 100px;
 }
 
@@ -206,6 +213,13 @@ a {
     -webkit-text-stroke: 0.5px #717379;
 }
 
+@media screen and (min-width: 1200px) {
+    .nav-link {
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
 
 /*header */
 
@@ -215,6 +229,7 @@ a {
 .footer-container {
     background-color: #0f172b;
     width: 100%;
+    margin-top: 100px;
 }
 
 .footer-container {
@@ -233,13 +248,7 @@ a {
     padding-top: 70px;
 }
 
-.foot-logo {
-    background-color: #fea116;
-    width: 280px;
-    height: 100px;
-    background-color: #fea116;
-    border-radius: 50px;
-    color: #ffff;
+.logo-bottom {
     margin-bottom: 20px;
 }
 
@@ -351,8 +360,6 @@ a {
     color: #717379;
 }
 
-@media (min-width: 1200px) {}
-
 .footer-top {
     padding-top: 100px;
     width: 100%;
@@ -370,6 +377,14 @@ a {
     display: flex;
     align-items: center;
     margin: 0 auto;
+    flex-wrap: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: scroll;
+}
+
+.footer-top1::-webkit-scrollbar {
+    display: none;
 }
 
 .foot-top1 {
@@ -1782,6 +1797,7 @@ a {
     padding: 0px;
     font-weight: 800px;
     font-size: 20px;
+    border-radius: 7px;
 }
 
 .input-wrap {
@@ -1829,8 +1845,7 @@ a {
     color: #ffff;
     background-color: #fea116;
     padding: 30px;
-    width: 55%;
-    height: 200px;
+    width: 65%;
     position: absolute;
     bottom: -5%;
     right: 0%;
@@ -1902,7 +1917,7 @@ a {
     z-index: 1;
 }
 
-.content2-1 {
+.content2-left {
     color: #ffff;
     padding-left: 20px;
 }
@@ -2048,12 +2063,10 @@ a {
 }
 
 .box1 {
-    height: 330px;
     margin-bottom: 35px;
 }
 
 .box1-content {
-    height: 330px;
     border: 2px solid #dfe9f4;
     padding: 50px 30px;
 }
@@ -2116,6 +2129,7 @@ a {
     color: #ffff;
     z-index: 10;
     margin-top: 20px;
+    line-height: 50px;
 }
 
 .des4 {
@@ -2132,7 +2146,133 @@ a {
 }
 
 
-/* danh cho xs */
+/* Screen cho home ****************************************/
+
+@media screen and (max-width: 1200px) {
+    .title1-right span {
+        font-size: 18px;
+    }
+    .title1-right h1 {
+        font-size: 30px;
+    }
+    .title1-right p {
+        font-size: 18px;
+    }
+    .content1-right-1 img {
+        width: 80%;
+        height: auto;
+    }
+    .content1-right-1 b {
+        font-size: 25px;
+    }
+    .content1-right-1 span {
+        font-size: 13px;
+    }
+    .content2-2::-webkit-scrollbar {
+        display: none;
+    }
+    .content2-2 {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .text-shadow p {
+        font-size: 180px;
+    }
+    .title-sm p {
+        font-size: 50px;
+    }
+    .title-big p {
+        font-size: 120px;
+    }
+    .get-startd {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .text-shadow p {
+        font-size: 130px;
+    }
+    .title-sm p {
+        font-size: 40px;
+    }
+    .title-big p {
+        font-size: 90px;
+    }
+    .get-startd {
+        font-size: 30px;
+    }
+    .content1 {
+        padding-top: 800px;
+    }
+    .content1-left {
+        margin-bottom: 50px;
+    }
+    .content1-right-1_1 img {
+        width: 60%;
+    }
+    .content2-main {
+        padding: 80px 30px;
+        background-color: #f1f8ff;
+    }
+    .content2-main::after {
+        left: 0;
+        width: 100%;
+        height: 60.9%;
+    }
+    .content2-left {
+        margin-bottom: 50px;
+        background-color: #0f172b;
+    }
+    .cont2-2 {
+        background-color: #ffff;
+        padding: 0px;
+    }
+    .title4-1 h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .title4-1 h1 {
+        font-size: 90px;
+    }
+    .button4 p {
+        font-size: 18px;
+    }
+    .des4 p {
+        font-size: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-shadow p {
+        font-size: 90px;
+    }
+    .title-sm p {
+        font-size: 30px;
+    }
+    .title-big p {
+        font-size: 80px;
+    }
+    .get-startd {
+        font-size: 20px;
+    }
+    .title4-1 h2 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .title4-1 h1 {
+        font-size: 60px;
+    }
+    .button4 p {
+        font-size: 18px;
+        margin: 0px;
+    }
+    .des4 {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 576px) {
     .booking,
@@ -2141,7 +2281,7 @@ a {
         width: 90%;
     }
     .text-shadow p {
-        font-size: 150px;
+        font-size: 100px;
     }
     .title-sm p {
         font-size: 20px;
@@ -2183,22 +2323,13 @@ a {
         width: 100%;
         height: 60.9%;
     }
-    .content2-1 {
+    .content2-left {
         margin-bottom: 50px;
         background-color: #0f172b;
     }
     .cont2-2 {
-        background-color: #f1f8ff;
+        background-color: #ffff;
         padding: 0px;
-    }
-    .content2-2 .col-xl-4 {
-        padding: 0px;
-    }
-    .content2-2 .col-xl-4:nth-child(2) {
-        display: none;
-    }
-    .content2-2 .col-xl-4:nth-child(3) {
-        display: none;
     }
     .content3 {
         margin-top: 200px;
@@ -2206,9 +2337,14 @@ a {
     .title3-2 h1 {
         font-size: 25px;
     }
+    .title4-1 h2 {
+        font-size: 20px;
+    }
     .title4-1 h1 {
         font-size: 60px;
-        margin-top: 20px;
+    }
+    .button4 {
+        font-size: 20px;
     }
     .des4 p {
         display: none;
@@ -2224,7 +2360,7 @@ a {
 
 /*css Gallery*/
 
-#main {
+#gallery-main {
     margin: 0 auto;
     padding-bottom: 40px;
 }
@@ -2259,14 +2395,16 @@ a {
     color: #ffff;
 }
 
-.main-menu {
-    margin-bottom: 60px;
+#gallery-main-menu {
+    display: flex;
+    justify-content: center;
 }
 
 .ul-main-menu {
-    padding-left: 110px;
     margin-top: 80px;
     margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .ul-main-menu li a {
@@ -2292,19 +2430,11 @@ a {
     visibility: hidden;
 }
 
-#main-conten1 {
-    display: none;
-}
-
-#main-conten2 {
-    display: none;
-}
-
 .col4-item {
     padding: 10px;
 }
 
-.container-main {
+.gallery-container-main {
     margin: 0 auto;
 }
 
@@ -2315,10 +2445,11 @@ a {
     position: relative;
 }
 
-.col4-item:hover div {
+
+/* .col4-item:hover div {
     background-color: #292e3a;
     visibility: visible;
-}
+} */
 
 .item-main-conten1 {
     height: 360px;
@@ -2355,11 +2486,13 @@ a {
 .item-main-conten-i {
     color: #ffff;
     font-size: 20px;
-    line-height: 50px;
     background-color: #fea116;
     height: 50px;
     width: 50px;
+    line-height: 50px;
     border-radius: 50%;
+    display: table;
+    vertical-align: middle;
 }
 
 @media (min-width:1200px) {
@@ -2377,3 +2510,327 @@ a {
 
 
 /*---------------------------------------------------------------------------*/
+
+
+/* -----------------------------------------------css của huynh----------------------- */
+
+
+/* css phần about-us */
+
+.about-us {
+    margin-top: 130px;
+}
+
+.about-text-about-us {
+    color: rgb(254, 161, 22);
+    float: right;
+    font-size: 18px;
+}
+
+.about-text-welcome {
+    font-weight: bold;
+    font-size: 50px;
+    float: left;
+    color: rgb(15, 23, 43);
+}
+
+.about-text-introduce {
+    font-size: 18px;
+}
+
+.about-abc {
+    padding: 0 20px;
+}
+
+.about-text-1-1 {
+    margin-bottom: 70px;
+}
+
+.about-iteam-col12 {
+    position: relative;
+    width: 1170;
+    height: 572px;
+    background-color: rgb(30, 44, 128);
+}
+
+.about-iteam-col5 {
+    transform: translateY(-25%);
+    margin-left: 70px;
+    background-color: rgb(241, 248, 255);
+    padding: 65px;
+}
+
+.about-get-startdcc button {
+    border-radius: 50px;
+    background-color: #fea116;
+    padding: 10px;
+    color: #ffff;
+    border: none;
+    margin-top: 30px;
+    float: left;
+}
+
+.about-get-startdcc {
+    padding-bottom: 80px;
+}
+
+.about-iteam-col5-text-1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.about-icon-number-text {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-min-number {
+    font-size: 60px;
+}
+
+.about-bg-tranform-img {
+    margin-bottom: 130px;
+}
+
+.about-bg-image {
+    background-image: url(../img/img/03_About_Us_02.jpg);
+    height: 661px;
+}
+
+.about-feature-iteam {
+    transform: translateY(-250px);
+    background-color: rgb(255, 255, 255);
+}
+
+.about-img-house {
+    width: 100%;
+    height: 250px;
+}
+
+.about-feature-text1-text2 {
+    padding: 30px 25px;
+}
+
+.about-feature-text1-text2>a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.about-feature-text1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.about-conten-explore {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.about-conten-explore-text1 {
+    color: rgb(254, 161, 22);
+    font-weight: bolder;
+}
+
+.about-conten-explore-text2 {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.about-feature2-iteam {
+    padding: 80px 10px;
+    text-align: center;
+    border-width: 4px;
+    border-style: solid;
+    border-color: rgb(233, 233, 234);
+    margin-bottom: 130px;
+    box-shadow: 6px 6px 0px rgb(233, 233, 234);
+}
+
+.about-feature2-text1 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.about-feature2-iteam a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.about-bg-acbcxyz {
+    height: 1210px;
+    background: rgb(241, 248, 255);
+}
+
+.about-feature3-iteam {
+    background-color: #fff;
+    position: relative;
+}
+
+.about-feature3-iteam-text1 {
+    font-size: 30px;
+}
+
+.about-feature3-iteam-text2 {
+    padding-left: 6px;
+    color: rgb(15, 23, 45);
+    font-weight: bold;
+}
+
+.about-feature3-iteam-padding {
+    padding: 60px;
+}
+
+.about-feature3-iteam-icon2 {
+    position: absolute;
+    bottom: 0px;
+    right: 60px;
+}
+
+.about-feature3-iteam:hover {
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(254, 161, 22);
+}
+
+
+/* ------------------------kết thúc about-------------- */
+
+
+/* css phần Blog-Grid */
+
+.bloggrid-img-house {
+    width: 100%;
+    height: 245px;
+}
+
+.bloggrid-feature-iteam {
+    margin-bottom: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bloggrid-feature-text {
+    margin-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bloggrid-feature-icon-date {
+    padding: 50px 25px;
+}
+
+.bloggrid-feature-date {
+    padding-left: 15px;
+}
+
+.blog-grid {
+    background-color: rgb(241, 248, 255);
+    padding-top: 130px;
+}
+
+.bloggrid-feature-icon-date>a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container .bloggrid-styte-buton button {
+    border-radius: 100px;
+    background-color: rgb(60, 74, 109);
+    font-size: 25px;
+    color: #ffff;
+}
+
+.bloggrid-styte-buton {
+    text-align: center;
+}
+
+.container .bloggrid-styte-buton button:hover {
+    background-color: #fea116;
+}
+
+
+/* ----------------------kết thúc blog----------------- */
+
+
+/* css phần Room-Grid */
+
+.rg-img-house {
+    width: 100%;
+    height: 245px;
+}
+
+.rg-feature-iteam {
+    margin-bottom: 60px;
+    background-color: rgb(255, 255, 255);
+}
+
+.rg-feature-text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.rg-feature-title-bg {
+    padding: 30px;
+}
+
+.rg {
+    background-color: rgb(241, 248, 255);
+    padding-top: 130px;
+}
+
+.rg-feature-title {
+    padding-top: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.rg-price {
+    background-color: #fea116;
+    border-radius: 5px;
+    color: #ffff;
+    border: none;
+    margin-top: 10px;
+}
+
+.container .rg-styte-buton button {
+    border-radius: 100px;
+    background-color: rgb(60, 74, 109);
+    font-size: 25px;
+    color: #ffff;
+}
+
+.rg-styte-buton {
+    text-align: center;
+}
+
+.container .rg-styte-buton button:hover {
+    background-color: #fea116;
+}
+
+.rg-feature-iteam-tranform2 button {
+    border-radius: 10px;
+    background-color: #fea116;
+    padding: 3px 10px;
+    color: #ffff;
+    border: none;
+}
+
+.rg-feature-iteam-tranform2 {
+    transform: translateY(-50%);
+    float: left;
+    padding-left: 20px;
+}
+
+.rg-feature-icon-title .icon8 {
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+
+/* -----------------------kết thúc rom grid---------------------------------- */
