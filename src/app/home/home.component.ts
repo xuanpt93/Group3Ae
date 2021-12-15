@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
       },
       {
         id: 3,
-        img: 'assets/img/img-home/icon2.png'
+        img: 'assets/img/img-home/Icon5.png'
       },
       {
         id: 4,
