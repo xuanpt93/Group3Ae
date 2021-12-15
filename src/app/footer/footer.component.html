@@ -1,23 +1,8 @@
 <div class="footer-container">
-    <div class="footer-top ">
+    <div class="footer_top ">
         <div class=" footer-top1 row ">
-            <div class="foot-top1 col-lg-2 col-md-4 col-sm-6">
-                <img src="assets/img/img-home/01.png" alt="">
-            </div>
-            <div class="foot-top1 col-lg-2 col-md-4 col-sm-6">
-                <img src="assets/img/img-home/02.png" alt="">
-            </div>
-            <div class="foot-top1 col-lg-2 col-md-4 col-sm-6">
-                <img src="assets/img/img-home/03.png" alt="">
-            </div>
-            <div class="foot-top1 col-lg-2 col-md-4 col-sm-6">
-                <img src="assets/img/img-home/04.png" alt="">
-            </div>
-            <div class="foot-top1 col-lg-2 col-md-4 col-sm-6">
-                <img src="assets/img/img-home/05.png" alt="">
-            </div>
-            <div class="foot-top1 col-lg-2 col-md-4 col-sm-6">
-                <img src="assets/img/img-home/06.png" alt="">
+            <div class="foot-top1 col-lg-2 col-md-4 col-sm-6" *ngFor="let p of footer_top">
+                <img src="{{p.img}}" alt="">
             </div>
         </div>
     </div>
