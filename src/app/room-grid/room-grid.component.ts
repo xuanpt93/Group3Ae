@@ -88,7 +88,7 @@ export class RoomGridComponent implements OnInit {
   }
   load(){
     // this.data = this.proServices.get();
-    this.proServices.getFormApi(' http://localhost:3000/products').subscribe(response => {
+    this.proServices.getFormApi('http://localhost:3000/rooom').subscribe(response => {
       this.data = response;
     });
   }

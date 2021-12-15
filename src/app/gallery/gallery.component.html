@@ -78,27 +78,30 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12 col-4 col-sm-6 col-md-4 col4-item" *ngFor="let x of pageData; let k = index ">
-                                        <h3>{{k}}</h3>
+
                                         <div class="item-main-conten">
-                                            <div class="sub-main-item-p">
-                                                <p>{{x.name}}</p>
-                                            </div>
-                                            <div class="sub-main-item">
-                                                <i class="fas fa-arrow-right item-main-conten-i"></i>
-                                            </div>
+
                                             <div class="galley-item-conten-image">
                                                 <img src="{{x.image1}}" alt="anh ">
                                             </div>
-
+                                            <div class="item-hiden-opacity">
+                                                <div class="sub-main-item-p">
+                                                    <p>{{x.name}}</p>
+                                                </div>
+                                                <div class="sub-main-item">
+                                                    <a href=""><i class="fas fa-arrow-right item-main-conten-i" style="line-height: 50px;"></i></a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="gallery-div-page">
                         <button class="glery-btn-page" [disabled]="currentPage == 1" (click)="prepage()"><i class="fas fa-chevron-left"></i></button>
-                        <button class="glery-btn-page" [ngClass]="{'active': (i+1) == currentPage}" (click)="loadPaginate(i+1)" *ngFor="let n of pages; let i = index">{{i+1}}</button>
+                        <button class="glery-btn-page" (click)="loadPaginate(i+1)" *ngFor="let n of pages; let i = index">{{i+1}}</button>
                         <button class="glery-btn-page" [disabled]="currentPage == 3" (click)="nextpage()"><i class="fas fa-chevron-right"></i></button>
                     </div>
 

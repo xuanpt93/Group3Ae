@@ -1,117 +1,114 @@
 <div class="container-fluid">
-  <div class="poster-big">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="poster">
-                    <div class="text-shadow">
-                        <p> Room</p>
+    <div class="poster-big">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="poster">
+                        <div class="text-shadow">
+                            <p> Room</p>
+                        </div>
+                        <div class="title-sm">
+                            <p> Welcome to Avason</p>
+                        </div>
+                        <div class="title-big">
+                            <p style="font-weight: bold;"> Our Room</p>
+                        </div>
+                        <div class="get-startd">
+                            <button type="button">GET STARTED -></button>
+                        </div>
                     </div>
-                    <div class="title-sm">
-                        <p> Welcome to Avason</p>
-                    </div>
-                    <div class="title-big">
-                        <p style="font-weight: bold;"> Our Room</p>
-                    </div>
-                    <div class="get-startd">
-                        <button type="button">GET STARTED -></button>
+                </div>
+                <div class="carousel-item">
+                    <div class="poster">
+                        <div class="text-shadow">
+                            <p> Avson</p>
+                        </div>
+                        <div class="title-sm">
+                            <p> Welcome to Avason</p>
+                        </div>
+                        <div class="title-big">
+                            <p> Luxury Living</p>
+                        </div>
+                        <div class="get-startd">
+                            <button type="button">GET STARTED -></button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="poster">
-                    <div class="text-shadow">
-                        <p> Avson</p>
-                    </div>
-                    <div class="title-sm">
-                        <p> Welcome to Avason</p>
-                    </div>
-                    <div class="title-big">
-                        <p> Luxury Living</p>
-                    </div>
-                    <div class="get-startd">
-                        <button type="button">GET STARTED -></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
+        </div>
     </div>
-</div>
-  <main>
-    <div class="rg">
-      <div class="container">
-        <div class="rg-featurn_posts">
-            <div class="row">
-                <div class=" col-md-6 col-xl-4 " *ngFor="let r of data">
-                    <div class="rg-feature-iteam">
-                        <div class="rg-feature-img">
-                            <div><img class="rg-img-house" src="{{r.Image}}" alt=""></div>
-                        </div>
-                        <div class="rg-feature-iteam-tranform2">
-                            <button>Guest House</button>
-                        </div>
-                        <div class="rg-feature-title-bg">
-                            <div class="rg-feature-title">
-                                <p>{{r.name}}</p>
-                            </div>
-                            <div class="rg-feature-text">
-                                <p>{{r.text}}</p>
-                            </div>
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="rg-feature-icon-title">
-                                        <div class="rg-icon8">
-                                            <img src="assets/img/img/calendar-alt.png" alt="">
-                                            3 Bed
+    <main>
+        <div class="rg">
+            <div class="container">
+                <div class="rg-featurn_posts">
+                    <div class="row">
+                        <div class=" col-md-6 col-xl-4 " *ngFor="let r of data">
+                            <div class="rg-feature-iteam">
+                                <div class="rg-feature-img">
+                                    <div><img class="rg-img-house" src="{{r.Image}}" alt=""></div>
+                                </div>
+                                <div class="rg-feature-iteam-tranform2">
+                                    <button><a>Guest House</a></button>
+                                </div>
+                                <div class="rg-feature-title-bg">
+                                    <div class="rg-feature-title">
+                                        <p>{{r.name}}</p>
+                                    </div>
+                                    <div class="rg-feature-text">
+                                        <p>{{r.text}}</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <div class="rg-feature-icon-title">
+                                                <div class="rg-icon8">
+                                                    <img src="assets/img/img/calendar-alt.png" alt=""> 3 Bed
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="rg-feature-icon-title">
+                                                <div class="rg-icon8">
+                                                    <img src="assets/img/img/bath.png" alt=""> 2 Baths
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="rg-feature-icon-title">
+                                                <div class="rg-icon8">
+                                                    <img src="assets/img/img/bed.png" alt=""> 72 m
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="rg-feature-icon-title">
-                                        <div class="rg-icon8">
-                                            <img src="assets/img/img/bath.png" alt="">
-                                            2 Baths
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="rg-feature-icon-title">
-                                        <div class="rg-icon8">
-                                            <img src="assets/img/img/bed.png" alt="">
-                                            72 m
-                                        </div>
-                                    </div>
+                                    <button (click)="eventEmmit(r.id)" class="rg-price" type="button">${{r.price}}</button>
                                 </div>
                             </div>
-                            <button (click)="eventEmmit(r.id)" class="rg-price" type="button">${{r.price}}</button>
                         </div>
+
                     </div>
                 </div>
-
+                <div class="rg-styte-buton">
+                    <button><</button>
+                    <button>01</button>
+                    <button>02</button>
+                    <button>03</button>
+                    <button>></button>
+                </div>
             </div>
         </div>
-        <div class="rg-styte-buton">
-            <button><</button>
-            <button>01</button>
-            <button>02</button>
-            <button>03</button>
-            <button>></button>
-        </div>
-    </div>
-    </div>
-</main>
+    </main>
 </div>
 <router-outlet></router-outlet>

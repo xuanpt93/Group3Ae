@@ -17,9 +17,8 @@ const routes: Routes = [
   {path:'blogdetail',component: BlogdetailComponent},
   {path:'about-us',component: AboutUsComponent},
   {path:'blog-grid',component: BlogGridComponent},
-  {path:'room-grid',component: RoomGridComponent}
-
-
+  {path:'room-grid',component: RoomGridComponent},
+  {path:'room-grid/:id',component: RoomdetailComponent}
 ];
 
 @NgModule({
