@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomgridEditComponent } from './roomgrid-edit/roomgrid-edit.component';
 import { RoomgridCreateComponent } from './roomgrid-create/roomgrid-create.component';
-import { ProductsService } from '../services/products.service';
 import { RouterModule, Routes } from '@angular/router';
 
 export const routes: Routes = [
@@ -23,7 +22,6 @@ export const routes: Routes = [
     RouterModule.forChild(routes)
   ],
   providers:[
-    ProductsService
   ]
 })
 export class RoomGridModule { }

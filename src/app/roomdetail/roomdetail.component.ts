@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, RouterLinkActive } from '@angular/router';
+import { RoomGribService } from '../services/room-grib.service';
 
 @Component({
   selector: 'app-roomdetail',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./roomdetail.component.css']
 })
 export class RoomdetailComponent implements OnInit {
-roomdetails: any[] = [
+data: any[] = [
   {
     id: 1,
     text1: 'Guest House',
@@ -38,9 +40,18 @@ roomdetails: any[] = [
    price: '180.00'
   }
 ]
-  constructor() { }
+data1:any;
+  constructor(private roomSever: RoomGribService,private router: ActivatedRoute) { }
 
   ngOnInit(): void {
+    const id = this.router.snapshot.params['id'];
+    this.load();
+    this.roomSever.findId(id).subscribe(res => this.data1 = res);
   }
 
+load(){
+  this.roomSever.getFormApi('http://localhost:3000/rooom').subscribe(xuanpham => {
+    this.data = xuanpham;
+  })
+}
 }

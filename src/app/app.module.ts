@@ -13,7 +13,6 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogGridComponent } from './blog-grid/blog-grid.component';
 import { RoomGridComponent } from './room-grid/room-grid.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProductsService } from './services/products.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({

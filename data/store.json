@@ -62,5 +62,13 @@
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
             "price": "280.00"
         }
-    ]
+    ],
+
+    "home": [{
+        "id": "1",
+        "name": "Modern Guest Rooms",
+        "Image": "assets/img/img/download.jpeg",
+        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+        "price": "280.00"
+    }]
 }

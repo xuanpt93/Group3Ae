@@ -72,7 +72,8 @@
                     <div class="row">
                         <div class="col-8 col-md-8 col-sm-12 col-12">
                             <div class="square-top-room">
-                                <span class="span-room">$180</span>
+                                <img src="{{data1.Image}}" alt="">
+                                <span class="span-room">{{data1.price}}</span>
                             </div>
                             <div class="main-buttom">
                                 <button>Guest House</button>
@@ -238,7 +239,7 @@
                 <h1>Explore Latest Product</h1>
                 <div class="container">
                     <div class="row">
-                        <div class="col-4 col-md-4 col-sm-6 col-12" *ngFor="let p of roomdetails">
+                        <div class="col-4 col-md-4 col-sm-6 col-12" *ngFor="let p of data">
                             <div class="footer-squeare">
                                 <div class="conten-fotter-rom">{{p.text1}}</div>
                             </div>
