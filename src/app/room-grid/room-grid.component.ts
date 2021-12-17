@@ -8,10 +8,10 @@ import { RoomGribService } from '../services/room-grib.service';
   styleUrls: ['./room-grid.component.css']
 })
 export class RoomGridComponent implements OnInit {
-  @Output() clickBuy: EventEmitter<any> = new EventEmitter()
+
+  @Output() clickBuy: EventEmitter<any> = new EventEmitter();
 
   data:any[]=[];
-
   constructor( private roomServer: RoomGribService) { }
 
   ngOnInit(): void {

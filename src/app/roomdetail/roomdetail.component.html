@@ -79,7 +79,7 @@
                                 <button>Guest House</button>
                             </div>
                             <div class="txt-p-room-div">
-                                <h1>Modern Gest Rooms</h1>
+                                <h1>{{data1.name}} </h1>
                                 <div>
                                     <ul class="nav">
                                         <li><a href="javascrip:void(0)"><i class="fa-solid fa-ruler-triangle">3 Bed</i></a></li>
@@ -88,10 +88,10 @@
 
                                     </ul>
                                 </div>
-                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                                    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
-                                    nisi ut aliquid ex ea comm odi consequatur</p>
+                                <p>{{data1.text}} Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                    explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                                    dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid ex ea comm odi consequatur</p>
                             </div>
                             <div class="text-col8-room">
                                 <div style="background-color: #c6c6c6;height: 430px;">
@@ -101,8 +101,8 @@
                                         <div class="col-4 col-md-4 col-sm-12 col-12">
                                             <h2 style="font-weight: bold;">Pricing Plan</h2>
                                             <ul class="ul-main-room">
-                                                <li>Nightly: <span class="span-ul-room">$525</span></li>
-                                                <li>Weekends(Sat_sun): <span class="span-ul-room">$535</span></li>
+                                                <li *ngFor="let k of data2">{{k.name}} <span ngClass="span-ul-room">${{k.price}}</span></li>
+                                                <!-- <li>Weekends(Sat_sun): <span class="span-ul-room">$535</span></li>
                                                 <li>Weddkly(7d+): <span class="span-ul-room">$515</span></li>
                                                 <li>Monthly(30d+): <span class="span-ul-room">$505</span></li>
                                                 <li>Security Deposit: <span class="span-ul-room">$1,050</span></li>
@@ -113,7 +113,7 @@
                                                 <li><span class="span-ul-room">Per Stay</span><br></li>
                                                 <li>City Fee: <span class="span-ul-room">$25 Per Stay</span></li>
                                                 <li>Minimun Nember Of Days: <span class="span-ul-room">1</span></li>
-                                                <li>Minimun Nember Of Days: <span class="span-ul-room">60</span></li>
+                                                <li>Minimun Nember Of Days: <span class="span-ul-room">60</span></li> -->
                                             </ul>
                                         </div>
                                         <div class="col-4 col-md-4 col-sm-12 col-12">
@@ -224,7 +224,7 @@
                                             <p>
                                                 Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore
                                             </p>
-                                            <button class="btn-book">BOOK NOW <i class="fas btn-i-room fa-arrow-right"></i></button>
+                                            <button (click)="eventEmmit(1)" class="rg-price" type="button" class="btn-book">BOOK NOW <i class="fas btn-i-room fa-arrow-right"></i></button>
                                         </div>
 
                                     </div>
@@ -241,6 +241,7 @@
                     <div class="row">
                         <div class="col-4 col-md-4 col-sm-6 col-12" *ngFor="let p of data">
                             <div class="footer-squeare">
+                                <img src="{{p.Image}}" alt="">
                                 <div class="conten-fotter-rom">{{p.text1}}</div>
                             </div>
                             <div class="conten-foter-all">
@@ -270,3 +271,7 @@
 </body>
 
 </html>
+<<<<<<< HEAD
+<router-outlet></router-outlet>
+=======
+>>>>>>> c2188cd8f77a8341d240f11cf36795f639e330ab
