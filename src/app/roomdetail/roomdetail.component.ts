@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output,EventEmitter } from '@angular/core';
 import { ActivatedRoute, RouterLinkActive } from '@angular/router';
 import { RoomGribService } from '../services/room-grib.service';
 
@@ -8,6 +8,7 @@ import { RoomGribService } from '../services/room-grib.service';
   styleUrls: ['./roomdetail.component.css']
 })
 export class RoomdetailComponent implements OnInit {
+  @Output() clickBuy: EventEmitter <any> = new EventEmitter();
 data: any[] = [
   {
     id: 1,
@@ -48,10 +49,23 @@ data1:any;
     this.load();
     this.roomSever.findId(id).subscribe(res => this.data1 = res);
   }
+  eventEmitter (id: number): void{
+    this.clickBuy.emit(id);
+  }
 
 load(){
   this.roomSever.getFormApi('http://localhost:3000/rooom').subscribe(xuanpham => {
     this.data = xuanpham;
   })
+}
+buy(rooom: any){
+  // lấy dữ liệu từ giỏ hàng trong storage
+
+  let carts = JSON.parse(localStorage.getItem('carts') || '[]');
+    carts.push(rooom);
+    // lưu giỏ hàng vào storage
+    localStorage.setItem('carts', JSON.stringify(carts));
+
+    this.clickBuy.emit();
 }
 }
