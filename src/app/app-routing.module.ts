@@ -9,14 +9,16 @@ import { BlogdetailComponent } from './blogdetail/blogdetail.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogGridComponent } from './blog-grid/blog-grid.component';
 import { RoomGridComponent } from './room-grid/room-grid.component';
+import { BlogdetailModule } from './blogdetail/blogdetail.module';
 const routes: Routes = [
   {path:'',component: HomeComponent},
   {path:'home',component: HomeComponent},
-  {path:'roomdetail', component: RoomdetailComponent},
+  // {path:'roomdetail', component: RoomdetailComponent},
   {path:'galley', component:  GalleryComponent},
   {path:'blogdetail',component: BlogdetailComponent},
   {path:'about-us',component: AboutUsComponent},
   {path:'blog-grid',component: BlogGridComponent},
+  {path:'blog-grid/:id',component: BlogdetailComponent},
   {path:'room-grid',component: RoomGridComponent},
   {path:'room-grid/:id',component: RoomdetailComponent}
 ];

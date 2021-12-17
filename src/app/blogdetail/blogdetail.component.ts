@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BlogGridService } from '../services/blog-grid.service';
 
 @Component({
   selector: 'app-blogdetail',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogdetailComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private blogServie: BlogGridService,private router: ActivatedRoute) { }
+data: any[] = [];
+data1: any;
   ngOnInit(): void {
+    const id = this.router.snapshot.params['id'];
+    this.load();
+    this.blogServie.findId(id).subscribe(res => this.data1 = res);
   }
-
+load(){
+  this.blogServie.getFormApi('http://localhost:3000/blog').subscribe(respon=>{
+    this.data = respon;
+  })
+}
 }

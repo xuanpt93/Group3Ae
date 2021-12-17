@@ -1556,7 +1556,6 @@ a {
 
 .square-top-room {
     height: 500px;
-    background-color: #4f4f4f;
     position: relative;
 }
 
@@ -1755,8 +1754,7 @@ a {
 }
 
 .footer-squeare {
-    background-color: #6e6e6e;
-    height: 253px;
+    height: auto;
     width: 100%;
     position: relative;
 }

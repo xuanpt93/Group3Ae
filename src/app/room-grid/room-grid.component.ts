@@ -11,7 +11,7 @@ export class RoomGridComponent implements OnInit {
   // @Input() iteam: any []=[];
   // @Output() clickBuy: EventEmitter<any> = new EventEmitter();
   // @Input() iteam: any []= [];
-  @Output() clickBuy: EventEmitter<any> = new EventEmitter()
+  @Output() clickBuy: EventEmitter<any> = new EventEmitter();
 
   data:any[]=[];
   constructor( private roomServer: RoomGribService) { }
