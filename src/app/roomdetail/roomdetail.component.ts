@@ -36,6 +36,9 @@ data1:any;
     this.loadDitail();
     this.roomSever.findId(id).subscribe(res => this.data1 = res);
   }
+  eventEmitter (id: number): void{
+    this.clickBuy.emit(id);
+  }
 
 load(){
   this.roomSever.getFormApi('http://localhost:3000/rooom').subscribe(xuanpham => {
@@ -51,5 +54,15 @@ loadDitail(){
 
 eventEmmit(id: number): void {
   this.clickBuy.emit(id);
+}
+buy(rooom: any){
+  // lấy dữ liệu từ giỏ hàng trong storage
+
+  let carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+    carts.push(rooom);
+    // lưu giỏ hàng vào storage
+    localStorage.setItem('carts', JSON.stringify(carts));
+
+    this.clickBuy.emit();
 }
 }

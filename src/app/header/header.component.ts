@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   @Input() countShopping: number = 0;
+  @Input() data: any [] = [];
 
   constructor() { }
 

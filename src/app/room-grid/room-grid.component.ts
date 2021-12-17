@@ -28,4 +28,10 @@ export class RoomGridComponent implements OnInit {
       this.data = response;
     });
   }
+   buy(room: any){
+
+     let carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+     localStorage.setItem('carts', JSON.stringify(carts));
+    this.clickBuy.emit();
+   }
 }
