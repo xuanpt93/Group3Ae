@@ -10,9 +10,7 @@ export class AppComponent {
   countShopping: number = 0;
   number: number = 0;
   dataCarts: any []= [];
-  carts: any[] = [
-    // {id: ɵgetNgModuleById__POST_R3__, quatity: soluong}
-  ];
+  carts: any[] = [];
   title = 'Teamplate7';
 
 

@@ -8,9 +8,7 @@ import { RoomGribService } from '../services/room-grib.service';
   styleUrls: ['./room-grid.component.css']
 })
 export class RoomGridComponent implements OnInit {
-  // @Input() iteam: any []=[];
-  // @Output() clickBuy: EventEmitter<any> = new EventEmitter();
-  // @Input() iteam: any []= [];
+
   @Output() clickBuy: EventEmitter<any> = new EventEmitter();
 
   data:any[]=[];
@@ -28,9 +26,9 @@ export class RoomGridComponent implements OnInit {
       this.data = response;
     });
   }
-   buy(room: any){
+   buy(rooom: any){
 
-     let carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+     var carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
      localStorage.setItem('carts', JSON.stringify(carts));
     this.clickBuy.emit();
    }
