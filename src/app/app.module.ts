@@ -14,6 +14,7 @@ import { BlogGridComponent } from './blog-grid/blog-grid.component';
 import { RoomGridComponent } from './room-grid/room-grid.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { CheckoutComponent } from './checkout/checkout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     AboutUsComponent,
     BlogGridComponent,
     RoomGridComponent,
+    CheckoutComponent,
   ],
   imports: [
     BrowserModule,

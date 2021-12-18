@@ -1,9 +1,3 @@
-<!-- cái này viết thử để hiện thông tin giỏ hàng -->
-<h1>aaaaaaaaaaaaaaaaaaaaaâ</h1>
-<div *ngFor="let m of data">
-    <img src="{{m.Image}}" alt="ảnh">
-    <p>acv</p>
-</div>
 <header>
     <div class="header ">
         <div class="navbar-big">
@@ -19,7 +13,29 @@
                     </div>
                 </div>
                 <div class="about col-xl-4 col-md-5 ">
-                    <button class="btn-shoping"><i class="fas fa-shopping-cart"></i> {{countShopping}}</button>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn-shoping">{{countShopping}}<i class="fas fa-shopping-cart"></i> </button>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a *ngFor="let m of data" class="dropdown-item ">
+                                    <div class="">
+                                        <div class="carts-roomgrid-img">
+                                            <img src="{{m.Image}}" alt="">
+                                        </div>
+                                        <div carts-roomgrid-price>
+                                            {{m.price}}
+                                        </div>
+                                        <div carts-roomgrid-name>
+                                            {{m.name}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item" routerLink="/checkout">check Out</a></li>
+                        </ul>
+                    </li>
                     <a href="">About Us</a>
                     <a href="">Sevices</a>
                     <a href="">Privacy</a>

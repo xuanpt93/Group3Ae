@@ -4,3 +4,8 @@
     color: #717379;
     font-weight: bold;
 }
+
+.carts-roomgrid-img img {
+    width: 200px;
+    height: 100px;
+}
