@@ -1,0 +1,20 @@
+<h1>Danh sách </h1>
+<table border="1" width="100%" cellpadding="5" cellspacing="0" width="100%">
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>action</th>
+    </tr>
+    <tr *ngFor="let item of data">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+        <td><img src="{{item.Image}}" alt=""></td>
+        <!-- <td>
+      <a [routerLink]="['/products/edit/' + item.id]">Edit</a> |
+      <a href="javascript:void(0)" (click)="del(item.id)">del</a>
+    </td> -->
+    </tr>
+</table>

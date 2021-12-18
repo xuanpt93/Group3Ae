@@ -1,7 +1,7 @@
-<div *ngFor="let m of data">
+<!-- <div *ngFor="let m of data">
     <img src="{{m.Image}}" alt="ảnh">
     <p>acv</p>
-</div>
+</div> -->
 <header>
     <div class="header ">
         <div class="navbar-big">
@@ -17,8 +17,32 @@
                     </div>
                 </div>
                 <div class="about col-xl-4 col-md-5 ">
-                    <button class="btn-shoping"><i class="fas fa-shopping-cart"></i> {{countShopping}}</button>
-                    <a href="">About Us</a>
+                    <!-- sửa header -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn-shoping">My Cart<i class="fas fa-shopping-cart">{{countShopping}}</i> </button>
+                        </a>
+                        <ul class="dropdown-menu dropdown-shopping" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a *ngFor="let m of data" class="dropdown-item ">
+                                    <div class="">
+                                        <div class="carts-roomgrid-img">
+                                            <img src="{{m.Image}}" alt="">
+                                        </div>
+                                        <div carts-roomgrid-price>
+                                            {{m.price}}
+                                        </div>
+                                        <div carts-roomgrid-name>
+                                            {{m.name}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item check-out" routerLink="/checkout">Check Out</a></li>
+                        </ul>
+                    </li>
+                    <!-- kết thúc sửa header -->
+                    <a class="ab-us" href="">About Us</a>
                     <a href="">Sevices</a>
                     <a href="">Privacy</a>
                     <a class="fab fa-facebook-f"></a>
@@ -101,6 +125,31 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- shopping css theo màn hình -->
+                    <div class="nav-item dropdown shopping">
+                        <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn-shoping">{{countShopping}}<i class="fas fa-shopping-cart"></i> </button>
+                        </a>
+                        <ul class="dropdown-menu dropdown-shopping" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a *ngFor="let m of data" class="dropdown-item ">
+                                    <div class="">
+                                        <div class="carts-roomgrid-img">
+                                            <img src="{{m.Image}}" alt="">
+                                        </div>
+                                        <div carts-roomgrid-price>
+                                            {{m.price}}
+                                        </div>
+                                        <div carts-roomgrid-name>
+                                            {{m.name}}
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a class="dropdown-item check-out" routerLink="/checkout">Check Out</a></li>
+                        </ul>
+                    </div>
+                    <!-- shopping css theo màn hình -->
                     <div class="nav-item dropdown item-search">
                         <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-search"></i>
