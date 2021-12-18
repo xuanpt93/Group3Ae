@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../services/home.service';
 
 @Component({
   selector: 'app-home',
@@ -32,9 +33,16 @@ export class HomeComponent implements OnInit {
         img: 'assets/img/img-home/Icon copy.png'
       }
   ]
-  constructor() { }
+  data: any[]=[];
+  constructor(private homeService: HomeService) { }
 
   ngOnInit(): void {
+    this.load();
+  }
+  load(){
+    this.homeService.getFormApi('http://localhost:3000/home').subscribe(dung=>{
+      this.data = dung;
+    });
   }
 
 }

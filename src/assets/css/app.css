@@ -1562,7 +1562,6 @@ a {
 
 .square-top-room {
     height: 500px;
-    background-color: #4f4f4f;
     position: relative;
 }
 
@@ -1761,8 +1760,7 @@ a {
 }
 
 .footer-squeare {
-    background-color: #6e6e6e;
-    height: 253px;
+    height: auto;
     width: 100%;
     position: relative;
 }
@@ -1840,10 +1838,6 @@ a {
 
 
 /*home*/
-
-.container-fluid {
-    /* padding: 0px; */
-}
 
 .poster {
     height: 600px;
@@ -1947,6 +1941,15 @@ a {
     color: #0f172b;
     font-size: 18px;
     width: 100%;
+    border: none;
+}
+
+.input-wrap>input:focus-visible,
+.input-wrap>select:focus-visible {
+    outline: none;
+}
+
+.arrivate-date {
     border: none;
 }
 
@@ -2136,7 +2139,7 @@ a {
     position: relative;
 }
 
-.cont2-2-fot>p {
+.btn-home {
     position: absolute;
     height: 40px;
     width: 150px;
@@ -2146,8 +2149,12 @@ a {
     border-radius: 5px;
     bottom: -16%;
     left: 8%;
-    line-height: 40px;
     text-align: center;
+    border: 0px solid;
+}
+
+.btn-home:hover {
+    background-color: bisque;
 }
 
 .text2-2 {

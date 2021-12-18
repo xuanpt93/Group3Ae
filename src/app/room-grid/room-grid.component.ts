@@ -8,10 +8,8 @@ import { RoomGribService } from '../services/room-grib.service';
   styleUrls: ['./room-grid.component.css']
 })
 export class RoomGridComponent implements OnInit {
-  // @Input() iteam: any []=[];
-  // @Output() clickBuy: EventEmitter<any> = new EventEmitter();
-  // @Input() iteam: any []= [];
-  @Output() clickBuy: EventEmitter<any> = new EventEmitter()
+
+  @Output() clickBuy: EventEmitter<any> = new EventEmitter();
 
   data:any[]=[];
   constructor( private roomServer: RoomGribService) { }
@@ -27,5 +25,13 @@ export class RoomGridComponent implements OnInit {
     this.roomServer.getFormApi('http://localhost:3000/rooom').subscribe(response => {
       this.data = response;
     });
+  }
+  buy(rooom: any){
+    var carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+      carts.push(rooom);
+      // lưu giỏ hàng vào storage
+      localStorage.setItem('carts', JSON.stringify(carts));
+
+      this.clickBuy.emit();
   }
 }
