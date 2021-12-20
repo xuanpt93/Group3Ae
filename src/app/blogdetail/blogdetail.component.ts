@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BlogDetailService } from '../services/blog-detail.service';
 import { BlogGridService } from '../services/blog-grid.service';
 
 @Component({
@@ -9,7 +10,10 @@ import { BlogGridService } from '../services/blog-grid.service';
 })
 export class BlogdetailComponent implements OnInit {
 
-  constructor(private blogServie: BlogGridService,private router: ActivatedRoute) { }
+  constructor(
+    private blogServie: BlogGridService,
+    private blogDeteil: BlogDetailService,
+    private router: ActivatedRoute) { }
 data: any[] = [];
 data1: any;
   ngOnInit(): void {
@@ -18,8 +22,9 @@ data1: any;
     this.blogServie.findId(id).subscribe(res => this.data1 = res);
   }
 load(){
-  this.blogServie.getFormApi('http://localhost:3000/blog').subscribe(respon=>{
+  this.blogDeteil.getApi('http://localhost:3000/blogDetail').subscribe(respon=>{
     this.data = respon;
   })
+
 }
 }

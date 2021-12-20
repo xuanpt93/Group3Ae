@@ -1,4 +1,6 @@
 <header>
+    <input type="date">
+
     <div class="header ">
         <div class="navbar-big">
             <div class="navbar nav-top row">
@@ -20,7 +22,7 @@
                         </a>
                         <ul class="dropdown-menu dropdown-shopping" aria-labelledby="navbarDropdown">
                             <li>
-                                <a *ngFor="let m of data" class="dropdown-item" style="border-bottom: 2px solid black;">
+                                <a *ngFor="let m of data  " class="dropdown-item ">
                                     <div class="">
                                         <div class="carts-roomgrid-img">
                                             <img src="{{m.Image}}" alt="">

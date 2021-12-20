@@ -28,7 +28,10 @@ data2: any[] = [
 
 ]
 data1:any;
-  constructor(private roomSever: RoomGribService,private router: ActivatedRoute,private roomDetail: RoomDetailService) { }
+  constructor(
+    private roomSever: RoomGribService,
+    private router: ActivatedRoute,
+    private roomDetail: RoomDetailService) { }
 
   ngOnInit(): void {
     const id = this.router.snapshot.params['id'];
@@ -41,9 +44,9 @@ data1:any;
   }
 
 load(){
-  this.roomSever.getFormApi('http://localhost:3000/rooom').subscribe(xuanpham => {
-    this.data = xuanpham;
-  })
+  // this.roomSever.getFormApi('http://localhost:3000/rooom').subscribe(xuanpham => {
+  //   this.data = xuanpham;
+  // })
 
 }
 loadDitail(){
