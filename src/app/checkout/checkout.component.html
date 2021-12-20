@@ -1,20 +1,26 @@
-<h1>Danh sách </h1>
-<table border="1" width="100%" cellpadding="5" cellspacing="0" width="100%">
-    <tr>
-        <th>Id</th>
-        <th>name</th>
-        <th>Price</th>
-        <th>Image</th>
-        <th>action</th>
-    </tr>
-    <tr *ngFor="let item of data">
-        <td>{{item.id}}</td>
-        <td>{{item.name}}</td>
-        <td>{{item.price}}</td>
-        <td><img src="{{item.Image}}" alt=""></td>
-        <!-- <td>
-      <a [routerLink]="['/products/edit/' + item.id]">Edit</a> |
-      <a href="javascript:void(0)" (click)="del(item.id)">del</a>
-    </td> -->
-    </tr>
-</table>
+<div class="container">
+    <h1 style="text-align: center;margin: 20px;">Danh sách </h1>
+    <table border="1" width="100%" cellpadding="5" cellspacing="0" width="100%">
+        <tr>
+            <th>Stt</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let item of data; let i = index ">
+            <td>{{i+1}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td><img src="{{item.Image}}" alt=""></td>
+            <td>
+                <button class="btn-checkout" (click)="deleteCarts(i)">Dell</button><br>
+                <button class="btn-checkout"> <a routerLink="/room-grid">Add</a></button>
+            </td>
+        </tr>
+
+        <tr *ngIf="data.length == 0">
+            <td colspan="5">Không có sản phẩm nào trong giỏ hàng</td>
+        </tr>
+    </table>
+</div>

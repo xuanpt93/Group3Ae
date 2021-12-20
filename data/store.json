@@ -2,7 +2,7 @@
     "rooom": [{
             "id": "1",
             "name": "Modern Guest Rooms",
-            "Image": "assets/img/img/download.jpeg",
+            "Image": "assets/img/img/1 (9).jpg",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
             "price": "280.00"
         },
@@ -168,6 +168,178 @@
             "date": "20 jan 2021",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
 
+        }
+    ],
+    "gallery": [{
+            "id": "1",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "2",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "3",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "4",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "5",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "6",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "7",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "8",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "9",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        }, {
+            "id": "10",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "11",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "12",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "13",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "14",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "15",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "16",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "17",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "18",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "19",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "20",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "21",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "22",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "23",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "24",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "25",
+            "name": "Home Luxery",
+            "image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "26",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        },
+        {
+            "id": "27",
+            "name": "Home Luxery",
+            "Image": "assets/img/img/1 (1).jpg",
+            "Title": "Luxury"
+        }
+    ],
+    "blogDetail": [{
+            "id": "1",
+            "Image": "assets/img/img/1 (18).jpg"
+
+        },
+        {
+            "id": "2",
+            "Image": "assets/img/img/1 (19).jpg"
         }
     ]
 }

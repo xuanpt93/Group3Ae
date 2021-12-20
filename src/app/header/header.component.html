@@ -1,4 +1,6 @@
 <header>
+    <input type="date">
+
     <div class="header ">
         <div class="navbar-big">
             <div class="navbar nav-top row">
@@ -15,12 +17,12 @@
                 <div class="about col-xl-4 col-md-5 ">
                     <!-- sửa header -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
                             <button class="btn-shoping">{{countShopping}}<i class="fas fa-shopping-cart"></i> </button>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a *ngFor="let m of data" class="dropdown-item ">
+                                <a *ngFor="let m of data  " class="dropdown-item ">
                                     <div class="">
                                         <div class="carts-roomgrid-img">
                                             <img src="{{m.Image}}" alt="">
