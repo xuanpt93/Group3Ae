@@ -10,6 +10,7 @@ export class BlogGridService {
    getFormApi(url:string):Observable<any>{
      return this.http.get(url);
    }
+<<<<<<< HEAD
 
   // post(url: string, item:any):Observable<any>{
   //   return this.http.post(url,item);
@@ -20,6 +21,17 @@ export class BlogGridService {
   // delete(url: string):Observable<any>{
   //   return this.http.delete(url);
   // }
+=======
+  post(url: string, item:any):Observable<any>{
+    return this.http.post(url,item);
+  }
+  put(url: string, item:any):Observable<any>{
+    return this.http.put(url,item);
+  }
+  delete(url: string):Observable<any>{
+    return this.http.delete(url);
+  }
+>>>>>>> b7fd3cba31df2caf751a34fd927101348437e33f
 
   // get(){
   //   return this.data;

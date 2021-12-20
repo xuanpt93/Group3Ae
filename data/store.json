@@ -65,12 +65,39 @@
     ],
 
     "home": [{
-        "id": "1",
-        "name": "Modern Guest Rooms",
-        "Image": "assets/img/img/download.jpeg",
-        "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-        "price": "280.00"
-    }],
+            "id": "1",
+            "text1": "Guest House",
+            "Image": "assets/img/img-home/home-1.jpeg",
+            "conten": "Mdodern Guest Rooms",
+            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
+            "infor": "3 Bed",
+            "infor1": "2 Baths",
+            "infor2": "72 m",
+            "price": " 180.000 "
+        },
+        {
+            "id": "2",
+            "text1": "Guest House",
+            "Image": "assets/img/img-home/home-2.jpeg",
+            "conten": "Mdodern Guest Rooms",
+            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
+            "infor": "3 Bed",
+            "infor1": "2 Baths",
+            "infor2": "72 m",
+            "price": " 180.000 "
+        },
+        {
+            "id": "3",
+            "text1": "Guest House",
+            "Image": "assets/img/img-home/home-3.jpeg",
+            "conten": "Mdodern Guest Rooms",
+            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
+            "infor": "3 Bed",
+            "infor1": "2 Baths",
+            "infor2": "72 m",
+            "price": " 180.000 "
+        }
+    ],
 
     "roomDetail": [{
             "id": "1",

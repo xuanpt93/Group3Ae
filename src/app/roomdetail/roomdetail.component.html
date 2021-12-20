@@ -1,91 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Room Deatils</title>
-    <!-- <link rel="stylesheet" href="css/jquery-ui.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-</head>
-
-<body>
-
-    <div>
-        <div class="poster-big">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="poster">
-                            <div class="text-shadow">
-                                <p> Avson</p>
-                            </div>
-                            <div class="title-sm">
-                                <p> Welcome to Avason</p>
-                            </div>
-                            <div class="title-big">
-                                <p> Room Details</p>
-                            </div>
-                            <div class="get-startd">
-                                <button type="button">GET STARTED -></button>
-                            </div>
-                        </div>
+<div class="poster-big">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="poster">
+                    <div class="text-shadow">
+                        <p> Avson</p>
                     </div>
-                    <div class="carousel-item">
-                        <div class="poster">
-                            <div class="text-shadow">
-                                <p> Avson</p>
-                            </div>
-                            <div class="title-sm">
-                                <p> Welcome to Avason</p>
-                            </div>
-                            <div class="title-big">
-                                <p> Room Detail</p>
-                            </div>
-                            <div class="get-startd">
-                                <button type="button">GET STARTED -></button>
-                            </div>
-                        </div>
+                    <div class="title-sm">
+                        <p> Welcome to Avason</p>
+                    </div>
+                    <div class="title-big">
+                        <p> Room Details</p>
+                    </div>
+                    <div class="get-startd">
+                        <button type="button">GET STARTED -></button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
+            </div>
+            <div class="carousel-item">
+                <div class="poster">
+                    <div class="text-shadow">
+                        <p> Avson</p>
+                    </div>
+                    <div class="title-sm">
+                        <p> Welcome to Avason</p>
+                    </div>
+                    <div class="title-big">
+                        <p> Room Detail</p>
+                    </div>
+                    <div class="get-startd">
+                        <button type="button">GET STARTED -></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-            </div>
-        </div>
-        <main id="rd-main">
-            <div class="main-room">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-8 col-md-8 col-sm-12 col-12">
-                            <div class="square-top-room">
-                                <img src="{{data1.Image}}" alt="">
-                                <span class="span-room">{{data1.price}}</span>
-                            </div>
-                            <div class="main-buttom">
-                                <button>Guest House</button>
-                            </div>
-                            <div class="txt-p-room-div">
-                                <h1>{{data1.name}} </h1>
-                                <div>
-                                    <ul class="nav">
-                                        <li><a href="javascrip:void(0)"><i class="fa-solid fa-ruler-triangle">3 Bed</i></a></li>
-                                        <li><a href="javascrip:void(0)"><i class="fa-solid fa-ruler-triangle">2 Baths</i></a></li>
-                                        <li><a href="javascrip:void(0)"><i class="fa-solid fa-ruler-triangle">72 m</i></a></li>
+    </div>
+</div>
+<main id="rd-main">
+    <div class="main-room">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-md-8 col-sm-12 col-12">
+                    <div class="square-top-room">
+                        <img src="{{data1.Image}}" alt="">
+                        <span class="span-room">{{data1.price}}</span>
+                    </div>
+                    <div class="main-buttom">
+                        <button>Guest House</button>
+                    </div>
+                    <div class="txt-p-room-div">
+                        <h1>{{data1.name}} </h1>
+                        <div>
+                            <ul class="nav">
+                                <li><a href="javascrip:void(0)"><i class="fa-solid fa-ruler-triangle">3 Bed</i></a></li>
+                                <li><a href="javascrip:void(0)"><i class="fa-solid fa-ruler-triangle">2 Baths</i></a></li>
+                                <li><a href="javascrip:void(0)"><i class="fa-solid fa-ruler-triangle">72 m</i></a></li>
 
+                            </ul>
+                        </div>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea comm
+                            odi consequatur</p>
+                    </div>
+                    <div class="text-col8-room">
+                        <div style="background-color: #c6c6c6;height: 430px;">
+                        </div>
+                        <div class="room-conten-col8">
+                            <div class="row">
+                                <div class="col-4 col-md-4 col-sm-12 col-12">
+                                    <h2 style="font-weight: bold;">Pricing Plan</h2>
+                                    <ul class="ul-main-room">
+                                        <li>Nightly: <span class="span-ul-room">$525</span></li>
+                                        <li>Weekends(Sat_sun): <span class="span-ul-room">$535</span></li>
+                                        <li>Weddkly(7d+): <span class="span-ul-room">$515</span></li>
+                                        <li>Monthly(30d+): <span class="span-ul-room">$505</span></li>
+                                        <li>Security Deposit: <span class="span-ul-room">$1,050</span></li>
+                                        <li>Additional Guests: <span class="span-ul-room">$525</span></li>
+                                        <li>Additional Guests: <span class="span-ul-room">Yes</span></li>
+                                        <li>Cleaning Fee: <span class="span-ul-room">$1,050</span><br>
+                                        </li>
+                                        <li><span class="span-ul-room">Per Stay</span><br></li>
+                                        <li>City Fee: <span class="span-ul-room">$25 Per Stay</span></li>
+                                        <li>Minimun Nember Of Days: <span class="span-ul-room">1</span></li>
+                                        <li>Minimun Nember Of Days: <span class="span-ul-room">60</span></li>
                                     </ul>
                                 </div>
                                 <p>{{data1.text}} Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
@@ -103,18 +114,6 @@
                                             <h2 style="font-weight: bold;">Pricing Plan</h2>
                                             <ul class="ul-main-room">
                                                 <li *ngFor="let k of data2">{{k.name}} <span ngClass="span-ul-room">${{k.price}}</span></li>
-                                                <!-- <li>Weekends(Sat_sun): <span class="span-ul-room">$535</span></li>
-                                                <li>Weddkly(7d+): <span class="span-ul-room">$515</span></li>
-                                                <li>Monthly(30d+): <span class="span-ul-room">$505</span></li>
-                                                <li>Security Deposit: <span class="span-ul-room">$1,050</span></li>
-                                                <li>Additional Guests: <span class="span-ul-room">$525</span></li>
-                                                <li>Additional Guests: <span class="span-ul-room">Yes</span></li>
-                                                <li>Cleaning Fee: <span class="span-ul-room">$1,050</span><br>
-                                                </li>
-                                                <li><span class="span-ul-room">Per Stay</span><br></li>
-                                                <li>City Fee: <span class="span-ul-room">$25 Per Stay</span></li>
-                                                <li>Minimun Nember Of Days: <span class="span-ul-room">1</span></li>
-                                                <li>Minimun Nember Of Days: <span class="span-ul-room">60</span></li> -->
                                             </ul>
                                         </div>
                                         <div class="col-4 col-md-4 col-sm-12 col-12">
@@ -158,62 +157,34 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-md-4 col-sm-12 col-12">
-                            <div class="square-right-room">
-                                <div class="span-div-right">
-                                    <span class="span-room-right">$162.00
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-sm-12 col-12">
+                    <div class="square-right-room">
+                        <div class="span-div-right">
+                            <span class="span-room-right">$162.00
                                         <span>Night</span>
-                                    </span>
-                                </div>
-                                <div class="container">
-                                    <form action="">
-                                        <div class="form-rigt-room">
+                            </span>
+                        </div>
+                        <div class="container">
+                            <form action="">
+                                <div class="form-rigt-room">
 
-                                            <div class="form-item-room">
-                                                <div class="input-item">
-                                                    <input class="input-form-room" type="search" placeholder="Search">
-                                                </div>
-                                                <div class="i-input-form ">
-                                                    <button> <i class="fas fa-search"></i></button>
-                                                </div>
-                                            </div>
+                                    <div class="form-item-room">
+                                        <div class="input-item">
+                                            <input class="input-form-room" type="search" placeholder="Search">
+                                        </div>
+                                        <div class="i-input-form ">
+                                            <button> <i class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
 
-                                            <div class="form-item-room">
-                                                <div class="input-item">
-                                                    <input id="txtTimer" name="txtTimer" class="input-form-room" type="text" placeholder="Arrive Date">
-                                                </div>
-                                                <div class="i-input-form-calendar i-input-form ">
-                                                    <button> <i class="fas fa-calendar-alt"></i></button>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-item-room">
-                                                <div class="input-item">
-                                                    <input id="txtTimer1" name="txtTimer1" class="input-form-room" type="text" placeholder="Depart Date">
-                                                </div>
-                                                <div class="i-input-form-calendar i-input-form ">
-                                                    <button> <i class="fas fa-calendar-alt"></i></button>
-                                                </div>
-                                            </div>
-                                            <div class="form-item-room">
-                                                <input class="input-form-room" type="" placeholder="Guests">
-                                            </div>
+                                    <div class="form-item-room">
+                                        <div class="input-item">
+                                            <input id="txtTimer" name="txtTimer" class="input-form-room" type="text" placeholder="Arrive Date">
                                         </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="col4-item-category">
-                                    <div class="container all-squera-cate ">
-                                        <h2>Category</h2>
-                                        <div class="col4-squera-category">
-                                            <div class="text-category">Luxury Room</div>
-                                        </div>
-                                        <div class="col4-squera-category">
-                                            <div class="text-category">Couple Room</div>
-                                        </div>
-                                        <div class="col4-squera-category">
-                                            <div class="text-category">Hotel views</div>
+                                        <div class="i-input-form-calendar i-input-form ">
+                                            <button> <i class="fas fa-calendar-alt"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -228,43 +199,80 @@
                                             <button (click)="eventEmmit(1)" class="rg-price" type="button" class="btn-book">BOOK NOW <i class="fas btn-i-room fa-arrow-right"></i></button>
                                         </div>
 
+                                        <div class="form-item-room">
+                                            <div class="input-item">
+                                                <input id="txtTimer1" name="txtTimer1" class="input-form-room" type="text" placeholder="Depart Date">
+                                            </div>
+                                            <div class="i-input-form-calendar i-input-form ">
+                                                <button> <i class="fas fa-calendar-alt"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="form-item-room">
+                                            <input class="input-form-room" type="" placeholder="Guests">
+                                        </div>
                                     </div>
                                 </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-room">
+                    <span>Latest Product</span>
+                    <h1>Explore Latest Product</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 col-md-4 col-sm-6 col-12" *ngFor="let p of data">
+                                <div class="footer-squeare">
+                                    <img src="{{p.Image}}" alt="">
+                                    <div class="conten-fotter-rom">{{p.text1}}</div>
+                                </div>
+                            </div>
+                            <div class="col4-bootom-childs">
+                                <div class="container ">
+                                    <div class="item-col4-bootom-childs">
+                                        <h2>Booking Your Latest apartment
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum dolor sit amet conse ctetur adipisicing elit sed do eiusmod tempor incididunt ut labore
+                                        </p>
+                                        <button class="btn-book">BOOK NOW <i class="fas btn-i-room fa-arrow-right"></i></button>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer-room">
-                <span>Latest Product</span>
-                <h1>Explore Latest Product</h1>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-4 col-md-4 col-sm-6 col-12" *ngFor="let p of data">
-                            <div class="footer-squeare">
-                                <img src="{{p.Image}}" alt="">
-                                <div class="conten-fotter-rom">{{p.text1}}</div>
+        </div>
+        <div class="footer-room">
+            <span>Latest Product</span>
+            <h1>Explore Latest Product</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-4 col-sm-6 col-12" *ngFor="let p of data">
+                        <div class="footer-squeare">
+                            <div class="conten-fotter-rom">{{p.text1}}</div>
+                        </div>
+                        <div class="conten-foter-all">
+                            <div class="conten-foter">
+                                <h2>{{p.conten}}</h2>
+                                <p>{{p.conten1}}</p>
                             </div>
-                            <div class="conten-foter-all">
-                                <div class="conten-foter">
-                                    <h2>{{p.conten}}</h2>
-                                    <p>{{p.conten1}}</p>
-                                </div>
-                                <div class="ul-rom-fot">
-                                    <ul class="nav">
-                                        <li>{{p.infor}}</li>
-                                        <li>{{p.infor1}}</li>
-                                        <li>{{p.infor2}}</li>
+                            <div class="ul-rom-fot">
+                                <ul class="nav">
+                                    <li>{{p.infor}}</li>
+                                    <li>{{p.infor1}}</li>
+                                    <li>{{p.infor2}}</li>
 
-                                    </ul>
-                                </div>
-                                <button class="btn-fot-price">${{p.price}}</button>
+                                </ul>
                             </div>
+                            <button class="btn-fot-price">${{p.price}}</button>
                         </div>
                     </div>
                 </div>
-
             </div>
+<<<<<<< HEAD
         </main>
 
     </div>
@@ -272,3 +280,7 @@
 </body>
 
 </html>
+=======
+        </div>
+        <router-outlet></router-outlet>
+>>>>>>> b7fd3cba31df2caf751a34fd927101348437e33f

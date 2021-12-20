@@ -1,54 +1,52 @@
-<div id="header">
-    <div class="poster-big">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="poster">
-                        <div class="text-shadow">
-                            <p> Avson</p>
-                        </div>
-                        <div class="title-sm">
-                            <p> Welcome to Avason</p>
-                        </div>
-                        <div class="title-big">
-                            <p> Luxury Living</p>
-                        </div>
-                        <div class="get-startd">
-                            <button type="button">GET STARTED -></button>
-                        </div>
+<div class="poster-big">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="poster">
+                    <div class="text-shadow">
+                        <p> Avson</p>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="poster">
-                        <div class="text-shadow">
-                            <p> Avson</p>
-                        </div>
-                        <div class="title-sm">
-                            <p> Welcome to Avason</p>
-                        </div>
-                        <div class="title-big">
-                            <p> Luxury Living</p>
-                        </div>
-                        <div class="get-startd">
-                            <button type="button">GET STARTED -></button>
-                        </div>
+                    <div class="title-sm">
+                        <p> Welcome to Avason</p>
+                    </div>
+                    <div class="title-big">
+                        <p> Luxury Living</p>
+                    </div>
+                    <div class="get-startd">
+                        <button type="button">GET STARTED -></button>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
+            <div class="carousel-item">
+                <div class="poster">
+                    <div class="text-shadow">
+                        <p> Avson</p>
+                    </div>
+                    <div class="title-sm">
+                        <p> Welcome to Avason</p>
+                    </div>
+                    <div class="title-big">
+                        <p> Luxury Living</p>
+                    </div>
+                    <div class="get-startd">
+                        <button type="button">GET STARTED -></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="z-index: 100;">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="z-index: 100;">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-        </div>
     </div>
 </div>
 <div class="main-container ">
@@ -162,18 +160,18 @@
                 </div>
                 <div class="content2-2 col-lg-8 offset-lg-1">
                     <div class="content2-2 row">
-                        <div class="col-xl-4 col-lg-6  col-sm-6">
+                        <div class="col-xl-4 col-lg-6  col-sm-6" *ngFor="let p of data">
                             <div class="cont2-2">
                                 <div class="cont2-2-fot">
-                                    <img src="assets/img/img-home/home-1.jpeg" alt="">
-                                    <p>Guest House</p>
+                                    <img src="{{p.Image}}" alt="">
+                                    <button class="btn-home"><a routerLink="{{p.id}}">{{p.text1}}</a></button>
                                 </div>
                                 <div class="text2-2">
                                     <div class="title2-2">
-                                        <h2>Modern Guest Rooms</h2>
+                                        <h2>{{p.conten}}</h2>
                                     </div>
                                     <div class="des2-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus </p>
+                                        <p>{{p.conten1}}</p>
                                     </div>
                                 </div>
                                 <div class="bottom2-2">
@@ -181,101 +179,23 @@
                                         <div class="col-4">
                                             <div class="icon2-2-1">
                                                 <i class="fas fa-bed"></i>
-                                                <p>3 Bed</p>
+                                                <p>{{p.infor}}</p>
                                             </div>
                                         </div>
                                         <div class="col-4">
                                             <div class="icon2-2-1">
                                                 <i class="fas fa-bath"></i>
-                                                <p>2 Baths</p>
+                                                <p>{{p.infor1}}</p>
                                             </div>
                                         </div>
                                         <div class="col-4">
                                             <div class="icon2-2-1">
                                                 <i class="fas fa-ruler-combined"></i>
-                                                <p>72m</p>
+                                                <p>{{p.infor2}}</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="price">$180.000</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6  col-sm-6">
-                            <div class="cont2-2">
-                                <div class="cont2-2-fot">
-                                    <img src="assets/img/img-home/home-2.jpeg" alt="">
-                                    <p>Guest House</p>
-                                </div>
-                                <div class="text2-2">
-                                    <div class="title2-2">
-                                        <h2>Modern Guest Rooms</h2>
-                                    </div>
-                                    <div class="des2-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus </p>
-                                    </div>
-                                </div>
-                                <div class="bottom2-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <div class="icon2-2-1">
-                                                <i class="fas fa-bed"></i>
-                                                <p>3 Bed</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="icon2-2-1">
-                                                <i class="fas fa-bath"></i>
-                                                <p>2 Baths</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="icon2-2-1">
-                                                <i class="fas fa-ruler-combined"></i>
-                                                <p>72m</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="price">$180.000</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-6  col-sm-6">
-                            <div class="cont2-2">
-                                <div class="cont2-2-fot">
-                                    <img src="assets/img/img-home/home-3.jpeg" alt="">
-                                    <p>Guest House</p>
-                                </div>
-                                <div class="text2-2">
-                                    <div class="title2-2">
-                                        <h2>Modern Guest Rooms</h2>
-                                    </div>
-                                    <div class="des2-2">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus </p>
-                                    </div>
-                                </div>
-                                <div class="bottom2-2">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <div class="icon2-2-1">
-                                                <i class="fas fa-bed"></i>
-                                                <p>3 Bed</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="icon2-2-1">
-                                                <i class="fas fa-bath"></i>
-                                                <p>2 Baths</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-4">
-                                            <div class="icon2-2-1">
-                                                <i class="fas fa-ruler-combined"></i>
-                                                <p>72m</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="price">$180.000</button>
+                                    <button class="price">{{p.price}}</button>
                                 </div>
                             </div>
                         </div>
