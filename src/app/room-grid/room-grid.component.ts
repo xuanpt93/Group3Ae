@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { RoomGribService } from '../services/room-grib.service';
 // import { EventEmitter } from 'stream';
 
@@ -12,7 +13,7 @@ export class RoomGridComponent implements OnInit {
   @Output() clickBuy: EventEmitter<any> = new EventEmitter();
 
   data:any[]=[];
-  constructor( private roomServer: RoomGribService) { }
+  constructor( private roomServer: RoomGribService, private route: Router) { }
 
   ngOnInit(): void {
     this.load();

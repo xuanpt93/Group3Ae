@@ -1,200 +1,214 @@
 {
-    "rooom": [{
-            "id": "1",
-            "name": "Modern Guest Rooms",
-            "Image": "assets/img/img/download.jpeg",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "2",
-            "Image": "assets/img/img/1 (10).jpg",
-            "name": "Rooms Bed Single",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "3",
-            "name": "Rooms Love",
-            "Image": "assets/img/img/1 (11).jpg",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "4",
-            "Image": "assets/img/img/1 (12).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "5",
-            "Image": "assets/img/img/1 (13).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "6",
-            "Image": "assets/img/img/1 (14).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "7",
-            "Image": "assets/img/img/1 (15).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "8",
-            "Image": "assets/img/img/1 (16).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "9",
-            "Image": "assets/img/img/1 (18).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        }
-    ],
-
-    "home": [{
-            "id": "1",
-            "text1": "Guest House",
-            "Image": "assets/img/img-home/home-1.jpeg",
-            "conten": "Mdodern Guest Rooms",
-            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
-            "infor": "3 Bed",
-            "infor1": "2 Baths",
-            "infor2": "72 m",
-            "price": " 180.000 "
-        },
-        {
-            "id": "2",
-            "text1": "Guest House",
-            "Image": "assets/img/img-home/home-2.jpeg",
-            "conten": "Mdodern Guest Rooms",
-            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
-            "infor": "3 Bed",
-            "infor1": "2 Baths",
-            "infor2": "72 m",
-            "price": " 180.000 "
-        },
-        {
-            "id": "3",
-            "text1": "Guest House",
-            "Image": "assets/img/img-home/home-3.jpeg",
-            "conten": "Mdodern Guest Rooms",
-            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
-            "infor": "3 Bed",
-            "infor1": "2 Baths",
-            "infor2": "72 m",
-            "price": " 180.000 "
-        }
-    ],
-
-    "roomDetail": [{
-            "id": "1",
-            "text1": "Guest House",
-            "Image": "assets/img/img/1 (9).jpg",
-            "conten": "Mdodern Guest Rooms",
-            "conten1": "Avoids pleasure itself, because pleasure, but because those who do not know how to pursue pleasure rationally encounter",
-            "infor": "3 Bed",
-            "infor1": "2 Baths",
-            "infor2": "72 m",
-            "price": " 180.0 "
-        },
-        {
-            "id": "2",
-            "text1": "Guest House",
-            "Image": "assets/img/img/1 (10).jpg",
-            "conten": "Conference Room",
-            "conten1": "Great explorer of the truth, the master- builder of human happiness one rejects, dislikes avoids pleasure because",
-            "infor": "3 Bed",
-            "infor1": "2 Baths",
-            "infor2": "72 m",
-            "price": "250.0"
-        },
-        {
-            "id": "3",
-            "text1": "Guest House",
-            "Image": "assets/img/img/1 (11).jpg",
-            "conten": "Deluxe Couple Room",
-            "conten1": "Avoids pleasure itself, because pleasure, but because those who do not know how to pursue pleasure rationally encounter",
-            "infor": "3 Bed",
-            "infor1": "2 Baths",
-            "infor2": "72 m",
-            "price": "180.0"
-        }
-    ],
-
-    "blog": [{
-            "id": "1",
-            "date": "20 jan 2021",
-            "Image": "assets/img/img/download.jpeg",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        },
-        {
-            "id": "2",
-            "Image": "assets/img/img/1 (10).jpg",
-            "date": "20 jan 2021",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        },
-        {
-            "id": "3",
-            "date": "20 jan 2021",
-            "Image": "assets/img/img/1 (11).jpg",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        },
-        {
-            "id": "4",
-            "Image": "assets/img/img/1 (12).jpg",
-            "date": "20 jan 2021",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        },
-        {
-            "id": "5",
-            "Image": "assets/img/img/1 (13).jpg",
-            "date": "20 jan 2021",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        },
-        {
-            "id": "6",
-            "Image": "assets/img/img/1 (14).jpg",
-            "date": "20 jan 2021",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        },
-        {
-            "id": "7",
-            "Image": "assets/img/img/1 (15).jpg",
-            "date": "20 jan 2021",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-        },
-        {
-            "id": "8",
-            "Image": "assets/img/img/1 (16).jpg",
-            "date": "20 jan 2021",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        },
-        {
-            "id": "9",
-            "Image": "assets/img/img/1 (18).jpg",
-            "date": "20 jan 2021",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
-
-        }
-    ]
+  "rooom": [
+    {
+      "id": "1",
+      "name": "Modern Guest Rooms",
+      "Image": "assets/img/img/download.jpeg",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "2",
+      "Image": "assets/img/img/1 (10).jpg",
+      "name": "Rooms Bed Single",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "3",
+      "name": "Rooms Love",
+      "Image": "assets/img/img/1 (11).jpg",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "4",
+      "Image": "assets/img/img/1 (12).jpg",
+      "name": "Modern Guest Rooms",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "5",
+      "Image": "assets/img/img/1 (13).jpg",
+      "name": "Modern Guest Rooms",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "6",
+      "Image": "assets/img/img/1 (14).jpg",
+      "name": "Modern Guest Rooms",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "7",
+      "Image": "assets/img/img/1 (15).jpg",
+      "name": "Modern Guest Rooms",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "8",
+      "Image": "assets/img/img/1 (16).jpg",
+      "name": "Modern Guest Rooms",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "9",
+      "Image": "assets/img/img/1 (18).jpg",
+      "name": "Modern Guest Rooms",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+      "price": "280.00"
+    },
+    {
+      "id": "14",
+      "name": "aaa",
+      "Image": "aaaaaaâ",
+      "Text": "aaaaa",
+      "price": "8"
+    },
+    {
+      "id": "19",
+      "name": "huynh",
+      "Image": "C:\\fakepath\\hoi1.png",
+      "Text": "aaaaaaaaaaaa",
+      "price": "5663"
+    },
+    {
+      "id": "18",
+      "name": "xuan",
+      "Image": "C:\\fakepath\\home-2.jpeg",
+      "Text": "aaaaaaaaaaaaâ",
+      "price": "78"
+    }
+  ],
+  "home": [
+    {
+      "id": "1",
+      "text1": "Guest House",
+      "Image": "assets/img/img-home/home-1.jpeg",
+      "conten": "Mdodern Guest Rooms",
+      "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
+      "infor": "3 Bed",
+      "infor1": "2 Baths",
+      "infor2": "72 m",
+      "price": " 180.000 "
+    },
+    {
+      "id": "2",
+      "text1": "Guest House",
+      "Image": "assets/img/img-home/home-2.jpeg",
+      "conten": "Mdodern Guest Rooms",
+      "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
+      "infor": "3 Bed",
+      "infor1": "2 Baths",
+      "infor2": "72 m",
+      "price": " 180.000 "
+    },
+    {
+      "id": "3",
+      "text1": "Guest House",
+      "Image": "assets/img/img-home/home-3.jpeg",
+      "conten": "Mdodern Guest Rooms",
+      "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
+      "infor": "3 Bed",
+      "infor1": "2 Baths",
+      "infor2": "72 m",
+      "price": " 180.000 "
+    }
+  ],
+  "roomDetail": [
+    {
+      "id": "1",
+      "text1": "Guest House",
+      "Image": "assets/img/img/1 (9).jpg",
+      "conten": "Mdodern Guest Rooms",
+      "conten1": "Avoids pleasure itself, because pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+      "infor": "3 Bed",
+      "infor1": "2 Baths",
+      "infor2": "72 m",
+      "price": " 180.0 "
+    },
+    {
+      "id": "2",
+      "text1": "Guest House",
+      "Image": "assets/img/img/1 (10).jpg",
+      "conten": "Conference Room",
+      "conten1": "Great explorer of the truth, the master- builder of human happiness one rejects, dislikes avoids pleasure because",
+      "infor": "3 Bed",
+      "infor1": "2 Baths",
+      "infor2": "72 m",
+      "price": "250.0"
+    },
+    {
+      "id": "3",
+      "text1": "Guest House",
+      "Image": "assets/img/img/1 (11).jpg",
+      "conten": "Deluxe Couple Room",
+      "conten1": "Avoids pleasure itself, because pleasure, but because those who do not know how to pursue pleasure rationally encounter",
+      "infor": "3 Bed",
+      "infor1": "2 Baths",
+      "infor2": "72 m",
+      "price": "180.0"
+    }
+  ],
+  "blog": [
+    {
+      "id": "1",
+      "date": "20 jan 2021",
+      "Image": "assets/img/img/download.jpeg",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "2",
+      "Image": "assets/img/img/1 (10).jpg",
+      "date": "20 jan 2021",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "3",
+      "date": "20 jan 2021",
+      "Image": "assets/img/img/1 (11).jpg",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "4",
+      "Image": "assets/img/img/1 (12).jpg",
+      "date": "20 jan 2021",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "5",
+      "Image": "assets/img/img/1 (13).jpg",
+      "date": "20 jan 2021",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "6",
+      "Image": "assets/img/img/1 (14).jpg",
+      "date": "20 jan 2021",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "7",
+      "Image": "assets/img/img/1 (15).jpg",
+      "date": "20 jan 2021",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "8",
+      "Image": "assets/img/img/1 (16).jpg",
+      "date": "20 jan 2021",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    },
+    {
+      "id": "9",
+      "Image": "assets/img/img/1 (18).jpg",
+      "date": "20 jan 2021",
+      "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor"
+    }
+  ]
 }

@@ -15,6 +15,8 @@ import { RoomGridComponent } from './room-grid/room-grid.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { AddComponent } from './add/add.component';
+import { RoomGribService } from './services/room-grib.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,6 +30,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     BlogGridComponent,
     RoomGridComponent,
     CheckoutComponent,
+    AddComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
   ],
   providers: [
     // ProductsService
+    RoomGribService
   ],
   bootstrap: [AppComponent]
 })
