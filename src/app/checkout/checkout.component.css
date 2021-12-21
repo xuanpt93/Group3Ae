@@ -1,3 +1,25 @@
 * {
     border-width: 1px;
 }
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+.btn-checkout {
+    width: 50px;
+    border: 1px solid #ccc;
+    background: none;
+    text-align: center;
+    color: rgb(39, 37, 34);
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 2px #ccc;
+}
+
+.btn-checkout>a {
+    color: rgb(39, 37, 34);
+}

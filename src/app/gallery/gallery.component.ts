@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { GalleryService } from '../services/gallery.service';
 
 @Component({
   selector: 'app-gallery',
@@ -7,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
-  [x: string]: any;
+ 
 gallays: any[] =[
   {
     id: 1,
@@ -35,7 +36,6 @@ gallays: any[] =[
   }
 ]
 data: any[]=[
-
  { id: 1, name: 'Luxuery Hotel', image1: 'assets/img/img/1 (1).jpg',},
  { id: 2, name: 'Luxuery Hotel', image1: 'assets/img/img/1 (2).jpg',},
  { id: 3, name: 'Luxuery Hotel', image1: 'assets/img/img/1 (3).jpg',},
@@ -69,9 +69,10 @@ pageSize: number = 9;
 totalpage: number = 0;
 currentPage: number = 1;
 pages: any[] = [];
-  constructor(private route:ActivatedRoute) { }
+  constructor(private route:ActivatedRoute, private gallerySerive: GalleryService) { }
 
   ngOnInit(): void {
+    // this.load();
     this.loadPaginate(1);
   }
 
@@ -91,4 +92,5 @@ pages: any[] = [];
     this.currentPage++;
     this.loadPaginate(this.currentPage);
   }
+
 }

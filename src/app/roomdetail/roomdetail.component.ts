@@ -40,6 +40,7 @@ data1:any;
     this.loadDitail();
     this.roomSever.findId(id).subscribe(res => this.data1 = res);
     this.homeService.findId(id).subscribe(res => this.data1 = res);
+
   }
   eventEmitter (id: number): void{
     this.clickBuy.emit(id);
