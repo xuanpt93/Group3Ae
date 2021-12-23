@@ -1,170 +1,166 @@
-<header>
-    <input type="date">
-
-    <div class="header ">
-        <div class="navbar-big">
-            <div class="navbar nav-top row">
-                <div class="contact col-xl-5 offset-xl-3 col-md-7 ">
-                    <div class="local">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <a> 205 Main Road, New York </a>
-                    </div>
-                    <div class="telephone">
-                        <i class="fas fa-phone"></i>
-                        <a href=""> +89 (456)789 999 </a>
-                    </div>
+<div class="header ">
+    <div class="navbar-big">
+        <div class="navbar nav-top row">
+            <div class="contact col-xl-5 offset-xl-3 col-md-7 ">
+                <div class="local">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a> 205 Main Road, New York </a>
                 </div>
-                <div class="about col-xl-4 col-md-5 ">
-                    <!-- sửa header -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <button class="btn-shoping">My Cart<i class="fas fa-shopping-cart">{{countShopping}}</i> </button>
-                        </a>
-                        <ul class="dropdown-menu dropdown-shopping" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a *ngFor="let m of data  " class="dropdown-item ">
-                                    <div class="">
-                                        <div class="carts-roomgrid-img">
-                                            <img src="{{m.Image}}" alt="">
-                                        </div>
-                                        <div carts-roomgrid-price>
-                                            {{m.price}}
-                                        </div>
-                                        <div carts-roomgrid-name>
-                                            {{m.name}}
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li><a class="dropdown-item check-out" routerLink="/checkout">Check Out</a></li>
-                        </ul>
-                    </li>
-                    <!-- kết thúc sửa header -->
-                    <a class="ab-us" href="">About Us</a>
-                    <a href="">Sevices</a>
-                    <a href="">Privacy</a>
-                    <a class="fab fa-facebook-f"></a>
-                    <a class="fab fa-twitter"></a>
-                    <a class="fab fa-youtube"></a>
-                    <a class="fab fa-instagram"></a>
+                <div class="telephone">
+                    <i class="fas fa-phone"></i>
+                    <a href=""> +89 (456)789 999 </a>
                 </div>
             </div>
-            <div class="navbar-bottom container-fluid align-items-center row">
-                <div class="logo col-xl-2 col-lg-2 col-sm-4 col-4">
-                    <div class="img-content">
-                        <img src="assets/img/img-home/icon.png" alt="">
-                        <div class="img-content-sm">
-                            <h1>AVSON</h1>
-                            <p>Hotel & Room Services</p>
-                        </div>
+            <div class="about col-xl-4 col-md-5 ">
+                <!-- sửa header -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn-shoping">My Cart<i class="fas fa-shopping-cart">{{countShopping}}</i> </button>
+                    </a>
+                    <ul class="dropdown-menu dropdown-shopping" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a *ngFor="let m of data  " class="dropdown-item ">
+                                <div class="">
+                                    <div class="carts-roomgrid-img">
+                                        <img src="{{m.Image}}" alt="">
+                                    </div>
+                                    <div carts-roomgrid-price>
+                                        {{m.price}}
+                                    </div>
+                                    <div carts-roomgrid-name>
+                                        {{m.name}}
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item check-out" routerLink="/checkout">Check Out</a></li>
+                    </ul>
+                </li>
+                <!-- kết thúc sửa header -->
+                <a class="ab-us" href="">About Us</a>
+                <a href="">Sevices</a>
+                <a href="">Privacy</a>
+                <a class="fab fa-facebook-f"></a>
+                <a class="fab fa-twitter"></a>
+                <a class="fab fa-youtube"></a>
+                <a class="fab fa-instagram"></a>
+            </div>
+        </div>
+        <div class="navbar-bottom container-fluid align-items-center row">
+            <div class="logo col-xl-2 col-lg-2 col-sm-4 col-4">
+                <div class="img-content">
+                    <img src="assets/img/img-home/icon.png" alt="">
+                    <div class="img-content-sm">
+                        <h1>AVSON</h1>
+                        <p>Hotel & Room Services</p>
                     </div>
                 </div>
-                <div class="navbar navbar-expand-lg nav-bot col-xl-10 col-lg-10 col-sm-8 col-8">
-                    <div class="container-fluid nav-right">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            </div>
+            <div class="navbar navbar-expand-lg nav-bot col-xl-10 col-lg-10 col-sm-8 col-8">
+                <div class="container-fluid nav-right">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav mb-2 mb-lg-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-circle"></i> English </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" routerLink="home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-circle"></i> English </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" routerLink="home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 HOME
                                             </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                   ROOMS
                                                  </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" routerLink="room-grid">ROOMS Grid</a></li>
-                                        <li><a class="dropdown-item" routerLink="roomdetail">ROOMS Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" routerLink="room-grid">ROOMS Grid</a></li>
+                                    <li><a class="dropdown-item" routerLink="roomdetail">ROOMS Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 SERVICES
                                             </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 NEWS
                                               </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" routerLink="blog-grid">Blog Grid</a></li>
-                                        <li><a class="dropdown-item" routerLink="blogdetail">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" routerLink="galley" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" routerLink="blog-grid">Blog Grid</a></li>
+                                    <li><a class="dropdown-item" routerLink="blogdetail">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" routerLink="galley" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 GALLERY
                                             </a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 CONTACT
                                             </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" routerLink="about-us">About Us</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" routerLink="about-us">About Us</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 ACOUNTS
                                             </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" routerLink="log-in">Log In</a></li>
-                                        <li><a class="dropdown-item" routerLink="sign-up">Sign Up</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- shopping css theo màn hình -->
-                    <div class="nav-item dropdown shopping">
-                        <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <button class="btn-shoping">{{countShopping}}<i class="fas fa-shopping-cart"></i> </button>
-                        </a>
-                        <ul class="dropdown-menu dropdown-shopping" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a *ngFor="let m of data" class="dropdown-item ">
-                                    <div class="">
-                                        <div class="carts-roomgrid-img">
-                                            <img src="{{m.Image}}" alt="">
-                                        </div>
-                                        <div carts-roomgrid-price>
-                                            {{m.price}}
-                                        </div>
-                                        <div carts-roomgrid-name>
-                                            {{m.name}}
-                                        </div>
-                                    </div>
-                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" routerLink="log-in">Log In</a></li>
+                                    <li><a class="dropdown-item" routerLink="sign-up">Sign Up</a></li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item check-out" routerLink="/checkout">Check Out</a></li>
                         </ul>
                     </div>
-                    <!-- shopping css theo màn hình -->
-                    <div class="nav-item dropdown item-search">
-                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-search"></i>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="search-form">
-                                <form>
-                                    <input type="search" placeholder="Search">
-                                </form>
-                            </div>
+                </div>
+                <!-- shopping css theo màn hình -->
+                <div class="nav-item dropdown shopping">
+                    <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn-shoping">{{countShopping}}<i class="fas fa-shopping-cart"></i> </button>
+                    </a>
+                    <ul class="dropdown-menu dropdown-shopping dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a *ngFor="let m of data" class="dropdown-item ">
+                                <div class="crad-drop">
+                                    <div class="carts-roomgrid-img">
+                                        <img src="{{m.Image}}" alt="">
+                                    </div>
+                                    <div carts-roomgrid-price>
+                                        {{m.price}}
+                                    </div>
+                                    <div carts-roomgrid-name>
+                                        {{m.name}}
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a class="dropdown-item check-out" routerLink="/checkout">Check Out</a></li>
+                    </ul>
+                </div>
+                <!-- shopping css theo màn hình -->
+                <div class="nav-item dropdown item-search">
+                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="search-form">
+                            <form>
+                                <input type="search" placeholder="Search">
+                            </form>
                         </div>
                     </div>
-                    <button class="get-quote">
+                </div>
+                <button class="get-quote">
                          <p> GET A QUOTE -></p>
                     </button>
-                </div>
             </div>
         </div>
     </div>
-</header>
+</div>
