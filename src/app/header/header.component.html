@@ -1,5 +1,4 @@
 <header>
-    <input type="date">
 
     <div class="header ">
         <div class="navbar-big">
@@ -17,7 +16,7 @@
                 <div class="about col-xl-4 col-md-5 ">
                     <!-- sửa header -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link about-effect " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <button class="btn-shoping">My Cart<i class="fas fa-shopping-cart">{{countShopping}}</i> </button>
                         </a>
                         <ul class="dropdown-menu dropdown-shopping" aria-labelledby="navbarDropdown">
@@ -40,13 +39,13 @@
                         </ul>
                     </li>
                     <!-- kết thúc sửa header -->
-                    <a class="ab-us" href="">About Us</a>
-                    <a href="">Sevices</a>
-                    <a href="">Privacy</a>
-                    <a class="fab fa-facebook-f"></a>
-                    <a class="fab fa-twitter"></a>
-                    <a class="fab fa-youtube"></a>
-                    <a class="fab fa-instagram"></a>
+                    <a class="ab-us about-effect" href="">About Us</a>
+                    <a href="" class="about-effect">Sevices</a>
+                    <a href="" class="about-effect">Privacy</a>
+                    <a class="fab fa-facebook-f about-effect"></a>
+                    <a class="fab fa-twitter about-effect"></a>
+                    <a class="fab fa-youtube about-effect"></a>
+                    <a class="fab fa-instagram about-effect"></a>
                 </div>
             </div>
             <div class="navbar-bottom container-fluid align-items-center row">
@@ -116,8 +115,9 @@
                                                 ACOUNTS
                                             </a>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" routerLink="log-in">Log In</a></li>
-                                        <li><a class="dropdown-item" routerLink="sign-up">Sign Up</a></li>
+                                        <li><a class="dropdown-item" routerLink="login">Log In</a></li>
+                                        <li><a class="dropdown-item" routerLink="regitser">Sign Up</a></li>
+                                        <li><a class="dropdown-item" routerLink="regitser" (click)="cleareLogin()">Log Out</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -166,5 +166,6 @@
                 </div>
             </div>
         </div>
+
     </div>
 </header>

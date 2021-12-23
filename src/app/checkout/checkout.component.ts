@@ -11,6 +11,7 @@ export class CheckoutComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadCart();
+   
   }
 loadCart (){
   this.data = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];

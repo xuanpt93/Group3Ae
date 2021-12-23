@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogGridComponent } from './blog-grid/blog-grid.component';
 import { RoomGridComponent } from './room-grid/room-grid.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { LoginComponent } from './login/login.component';
@@ -20,6 +20,7 @@ import { RegistryComponent } from './registry/registry.component';
 import { RoomGribService } from './services/room-grib.service';
 import { AddComponent } from './add/add.component';
 import { CommonModule } from '@angular/common';
+import { AuthGuardService } from './services/auth-guard.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,14 +42,16 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule, // formGroup là compoentn của Module này rồi, thêm Module này là đc
+    //FormGroup, // Ko phải module, ko được thêm ở đây
     HttpClientModule,
     CommonModule
 
   ],
   providers: [
     // ProductsService
-    RoomGribService
+    RoomGribService,
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })

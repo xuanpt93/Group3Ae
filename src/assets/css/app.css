@@ -36,8 +36,16 @@ a:hover {
     color: #fea116;
 }
 
-.about>i,
+
+/* .about>i,
 a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #717379;
+    cursor: pointer;
+} */
+
+.about-effect {
     margin-right: 10px;
     text-decoration: none;
     color: #717379;
@@ -3010,3 +3018,40 @@ a {
 
 
 /* -----------------------kết thúc rom grid---------------------------------- */
+
+
+/************login -- registry-----------*/
+
+.log-in {
+    margin: 30px auto;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    padding: 30px 5px;
+    box-shadow: 1px 1px 1px 1px #8c8c8c;
+}
+
+.log-in>h1 {
+    font-size: 25px;
+    color: hsla(0, 0%, 3%, 0.966);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.log-in input {
+    margin: 5px;
+    padding-left: 5px;
+    width: 80%;
+}
+
+.log-in button {
+    width: 100px;
+    margin: 0px 5px;
+    background-color: none;
+    border: 1px solid #8c8c8c;
+    color: #6d6d6d;
+}
+
+.log-in button:hover {
+    color: #fea116;
+    background-color: aquamarine;
+}

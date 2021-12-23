@@ -68,4 +68,6 @@ buy(rooom: any){
 
     this.clickBuy.emit();
 }
+
 }
+

@@ -70,7 +70,7 @@
                 <div class="gallery-container-main">
                     <div id="gallery-main-menu ">
                         <ul class="ul-main-menu nav col-4 col-md-12  col-sm-7">
-                            <li class="nav-item active " *ngFor="let x of gallays"><a class="nav-link actvive" href=""><i class="fas i-main-menu show active fa-arrow-right"></i>{{x.txt}}</a></li>
+                            <li class="nav-item active  " *ngFor="let x of gallays"><a class="nav-link actvive" (click)="findLuxury()" href=""><i class="fas i-main-menu show active fa-arrow-right"></i>{{x.txt}}</a></li>
                         </ul>
                     </div>
                     <div>

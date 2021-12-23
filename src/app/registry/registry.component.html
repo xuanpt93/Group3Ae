@@ -1,1 +1,26 @@
-<p>registry works!</p>
+<!-- <h1>Đăng Ký</h1>
+<input type="text" [(ngModel)]="user" placeholder="Tài khoản"><br>
+<input type="text" [(ngModel)]="password" placeholder="Mật khẩu"><br>
+<button (click)="register()">Đăng Ký</button> | <a routerLink="/login">Đăng Nhập</a> -->
+
+
+<div class="container">
+    <div class="log-in">
+        <h1>Đăng Ký </h1>
+        <form action="" [formGroup]="fgRegistry" (submit)="register()">
+            <input type="text" formControlName='user' placeholder="Tài khoản"> <br>
+            <p *ngIf="fgRegistry.get('user')?.errors?.['required'] && (fgRegistry.get('user')?.dirty || fgRegistry.get('user')?.touched) "> Vui lòng nhập tài khoản</p>
+            <input type="password" formControlName='password' placeholder="Mật khẩu"> <br>
+            <p *ngIf="fgRegistry.get('password')?.errors?.['required'] && (fgRegistry.get('password')?.dirty || fgRegistry.get('password')?.touched) "> Vui lòng nhập Mật khẩu</p>
+            <!-- <input required type="password" formControlName='password' placeholder="Xác nhận mật khẩu"> <br> -->
+            <!-- <p *ngIf="fgRegistry.get('password')?.errors?.['required'] && (fgRegistry.get('password')?.dirty || fgRegistry.get('password')?.touched) "> Vui lòng nhập xác nhận Mật khẩu</p> -->
+            <div *ngIf="fgRegistry.get('password')?.errors?.['minlength'] && (fgRegistry.get('user')?.dirty || fgRegistry.get('user')?.touched) "> Mật khẩu phải có 5 kí tự</div>
+
+            <button [disabled]="fgRegistry.invalid" type="submit">Đăng Ký</button>
+            <button>
+                    <a  routerLink="/login">Đăng Nhập</a>
+                </button>
+
+        </form>
+    </div>
+</div>

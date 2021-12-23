@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserService } from '../services/user.service';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +12,13 @@ export class HeaderComponent implements OnInit {
   @Input() countShopping: number = 0;
   @Input() data: any [] = [];
 
-  constructor() { }
+  constructor(private user: UserService, private rout:Router) { }
 
   ngOnInit(): void {
+    this.cleareLogin();
   }
- 
+ cleareLogin(){
+  sessionStorage.clear();
+  this.rout.navigate(['home']);
+ }
 }

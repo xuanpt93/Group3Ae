@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="container">
+    <div class="log-in">
+        <h1>Đăng Nhập </h1>
+        <form action="" [formGroup]="fgLogin" (submit)="login()">
+            <input type="text" formControlName='user' placeholder="Tài khoản"> <br>
+            <p *ngIf="fgLogin.get('user')?.errors?.['required'] && (fgLogin.get('user')?.dirty || fgLogin.get('user')?.touched) "> Vui lòng nhập tài khoản</p>
+            <input type="password" formControlName='password' placeholder="Mật khẩu"> <br>
+            <p *ngIf="fgLogin.get('password')?.errors?.['required'] && (fgLogin.get('password')?.dirty || fgLogin.get('password')?.touched) "> Vui lòng nhập Mật khẩu</p>
+            <div *ngIf="fgLogin.get('password')?.errors?.['minlength'] && (fgLogin.get('user')?.dirty || fgLogin.get('user')?.touched) "> Mật khẩu phải có 5 kí tự</div>
+            <button [disabled]="fgLogin.invalid" type="submit">Đăng Nhập</button>
+            <button>
+                <a routerLink="/regitser">Đăng ký</a>
+            </button>
+        </form>
+    </div>
+</div>
+
+
+
+<!-- <input type="text" [(ngModel)]="user" placeholder="Tài khoản"> <br>
+<input type="text" [(ngModel)]="password" placeholder="Mật khẩu"> <br>
+<button (click)="login()">Đăng Nhập</button> | <a routerLink="/regitser">Đăng ký</a> -->
