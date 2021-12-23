@@ -10,7 +10,7 @@
             "id": "2",
             "Image": "assets/img/img/1 (10).jpg",
             "name": "Rooms Bed Single",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+            "text": "Lorem, ipsum ",
             "price": "280.00"
         },
         {
@@ -38,7 +38,7 @@
             "id": "6",
             "Image": "assets/img/img/1 (14).jpg",
             "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto Lorem, ipsum dolor sit amet consectetu",
             "price": "280.00"
         },
         {
@@ -96,11 +96,11 @@
             "text1": "Guest House",
             "Image": "assets/img/img-home/home-1.jpeg",
             "conten": "Mdodern Guest Rooms",
-            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, fugit magnam. Aliquam id dicta nemo ducimus",
+            "conten1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
             "infor": "3 Bed",
             "infor1": "2 Baths",
             "infor2": "72 m",
-            "price": " 180.000 "
+            "price": " 180.0 "
         },
         {
             "id": "2",
@@ -111,7 +111,7 @@
             "infor": "3 Bed",
             "infor1": "2 Baths",
             "infor2": "72 m",
-            "price": " 180.000 "
+            "price": " 180.0 "
         },
         {
             "id": "3",
@@ -122,7 +122,7 @@
             "infor": "3 Bed",
             "infor1": "2 Baths",
             "infor2": "72 m",
-            "price": " 180.000 "
+            "price": " 180.0 "
         }
     ],
     "roomDetail": [{

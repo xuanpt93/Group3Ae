@@ -1,5 +1,9 @@
 /*header css*/
 
+.rg-feature-iteam {
+    width: 100%;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -74,11 +78,6 @@ a {
 .fa-shopping-cart {
     margin-left: 5px;
     margin-right: 10px;
-}
-
-.carts-roomgrid-img img {
-    width: 200px;
-    height: 100px;
 }
 
 .about {
@@ -158,6 +157,16 @@ a {
     background-color: #0f172b;
     color: #ffff;
     border: none;
+}
+
+.crad-drop {
+    width: 100%;
+}
+
+.carts-roomgrid-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .item-search {
@@ -299,14 +308,6 @@ a {
 }
 
 @media screen and (max-width:768px) {
-    /* .nav-bot {
-        position: relative;
-    } */
-    .shopping>.dropdown-menu {
-        /* position: absolute; */
-        top: 150%;
-        padding-right: 100px;
-    }
     .logo {
         padding: 0px;
     }
@@ -381,6 +382,15 @@ a {
     }
     .btn-shoping {
         color: #ffff;
+    }
+    .shopping {
+        position: relative;
+    }
+    .dropdown-shopping {
+        position: absolute;
+        top: 155% !important;
+        width: 400%;
+        left: -229% !important;
     }
 }
 
@@ -2123,6 +2133,8 @@ a {
 
 .cont2-2 {
     background-color: #ffff;
+    display: flex;
+    flex-direction: column;
 }
 
 .note2-1 h2 {
@@ -2162,18 +2174,19 @@ a {
     color: #ffff;
     font-size: 18px;
     border-radius: 5px;
-    bottom: -16%;
+    bottom: -8%;
     left: 8%;
     text-align: center;
     border: 0px solid;
 }
 
-.btn-home:hover {
-    background-color: bisque;
+.btn-home a:hover {
+    color: #363d4d;
 }
 
 .text2-2 {
     padding: 30px;
+    flex: 1;
 }
 
 .title2-2 h2 {
@@ -2388,13 +2401,16 @@ a {
         font-size: 30px;
     }
     .content1 {
-        padding-top: 800px;
+        padding-top: 500px;
     }
     .content1-left {
         margin-bottom: 50px;
     }
     .content1-right-1_1 img {
         width: 60%;
+    }
+    .content2 {
+        margin-bottom: 20px;
     }
     .content2-main {
         padding: 80px 30px;
@@ -2412,6 +2428,9 @@ a {
     .cont2-2 {
         background-color: #ffff;
         padding: 0px;
+    }
+    .content3 {
+        margin-top: 80px;
     }
     .title4-1 h2 {
         font-size: 30px;

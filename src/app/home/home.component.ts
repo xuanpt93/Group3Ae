@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
+import { RoomdetailComponent } from '../roomdetail/roomdetail.component';
 import { HomeService } from '../services/home.service';
 
 @Component({
@@ -35,7 +37,6 @@ export class HomeComponent implements OnInit {
   ]
   data: any[]=[];
   constructor(private homeService: HomeService) { }
-
   ngOnInit(): void {
     this.load();
   }
