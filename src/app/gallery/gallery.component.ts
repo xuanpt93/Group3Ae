@@ -9,7 +9,7 @@ import { GalleryService } from '../services/gallery.service';
   styleUrls: ['./gallery.component.css']
 })
 export class GalleryComponent implements OnInit {
- 
+
 gallays: any[] =[
   {
     id: 1,
@@ -74,12 +74,13 @@ pages: any[] = [];
 
   ngOnInit(): void {
     this.load();
-    this.loadPaginate(1);
+
   }
   load(){
-  
+
     this.gallerySerive.getFormApi('http://localhost:3000/gallery').subscribe(res => {
       this.data = res;
+      this.loadPaginate(1);
     })
   }
   loadPaginate(page: number){
