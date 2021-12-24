@@ -163,6 +163,10 @@ a {
     width: 100%;
 }
 
+.dropdown-shopping {
+    width: 500%;
+}
+
 .carts-roomgrid-img img {
     width: 100%;
     height: auto;
@@ -2461,6 +2465,9 @@ a {
     .get-startd {
         font-size: 20px;
     }
+    .content1 {
+        padding-top: 800px;
+    }
     .title4-1 h2 {
         font-size: 30px;
         margin-bottom: 50px;
@@ -2971,6 +2978,8 @@ a {
 .rg-feature-iteam {
     margin-bottom: 60px;
     background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
 }
 
 .rg-feature-text {
@@ -2978,7 +2987,14 @@ a {
 }
 
 .rg-feature-title-bg {
-    padding: 30px;
+    padding: 0px 30px 30px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rg-feature-title-bg>.row {
+    margin-top: auto;
 }
 
 .rg {
@@ -2999,6 +3015,7 @@ a {
     color: #ffff;
     border: none;
     margin-top: 10px;
+    width: 30%;
 }
 
 .container .rg-styte-buton button {

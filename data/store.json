@@ -65,13 +65,13 @@
         {
             "id": "10",
             "name": "Modern Guest Rooms",
-            "Image": "assets/img/img/1 (9).jpg",
+            "Image": "assets/img/img/1 (18).jpg",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
             "price": "280.00"
         },
         {
             "id": "11",
-            "Image": "assets/img/img/1 (10).jpg",
+            "Image": "assets/img/img/1 (17).jpg",
             "name": "Rooms Bed Single",
             "text": "Lorem, ipsum ",
             "price": "280.00"
@@ -79,56 +79,55 @@
         {
             "id": "12",
             "name": "Rooms Love",
-            "Image": "assets/img/img/1 (11).jpg",
+            "Image": "assets/img/img/1 (16).jpg",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
             "price": "280.00"
         },
         {
             "id": "13",
-            "Image": "assets/img/img/1 (12).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "14",
-            "Image": "assets/img/img/1 (13).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
-            "price": "280.00"
-        },
-        {
-            "id": "15",
-            "Image": "assets/img/img/1 (14).jpg",
-            "name": "Modern Guest Rooms",
-            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto Lorem, ipsum dolor sit amet consectetu",
-            "price": "280.00"
-        },
-        {
-            "id": "16",
             "Image": "assets/img/img/1 (15).jpg",
             "name": "Modern Guest Rooms",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
             "price": "280.00"
         },
         {
+            "id": "14",
+            "Image": "assets/img/img/1 (14).jpg",
+            "name": "Modern Guest Rooms",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+            "price": "280.00"
+        },
+        {
+            "id": "15",
+            "Image": "assets/img/img/1 (13).jpg",
+            "name": "Modern Guest Rooms",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto Lorem, ipsum dolor sit amet consectetu",
+            "price": "280.00"
+        },
+        {
+            "id": "16",
+            "Image": "assets/img/img/1 (12).jpg",
+            "name": "Modern Guest Rooms",
+            "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
+            "price": "280.00"
+        },
+        {
             "id": "17",
-            "Image": "assets/img/img/1 (16).jpg",
+            "Image": "assets/img/img/1 (11).jpg",
             "name": "Modern Guest Rooms",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
             "price": "280.00"
         },
         {
             "id": "18",
-            "Image": "assets/img/img/1 (18).jpg",
+            "Image": "assets/img/img/1 (10).jpg",
             "name": "Modern Guest Rooms",
             "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum iste laudantium, a dolor iure expedita architecto",
             "price": "280.00"
         }
-
     ],
     "home": [{
-            "id": "1",
+            "id": "99",
             "text1": "Guest House",
             "Image": "assets/img/img-home/home-1.jpeg",
             "conten": "Mdodern Guest Rooms",
@@ -139,7 +138,7 @@
             "price": " 180.0 "
         },
         {
-            "id": "2",
+            "id": "98",
             "text1": "Guest House",
             "Image": "assets/img/img-home/home-2.jpeg",
             "conten": "Mdodern Guest Rooms",
@@ -150,7 +149,7 @@
             "price": " 180.0 "
         },
         {
-            "id": "3",
+            "id": "97",
             "text1": "Guest House",
             "Image": "assets/img/img-home/home-3.jpeg",
             "conten": "Mdodern Guest Rooms",
@@ -294,6 +293,11 @@
             "username": "huynh",
             "password": "huynh123",
             "id": 9
+        },
+        {
+            "username": "dungnv",
+            "password": "12345",
+            "id": 10
         }
     ],
     "gallery": [{
