@@ -1681,8 +1681,9 @@ a {
 .main-buttom button {
     color: #fff;
     border: none;
+    position: relative;
     border-radius: 4px;
-    margin-top: 20px;
+    margin-top: 70px;
     padding: 5px;
     font-size: 17px;
     background: #fea116;

@@ -50,3 +50,9 @@ $('#txtTimer1').datepicker({
 //         el.style.display = 'flex';
 //     })
 // }
+$(document).ready(function() {
+    var now = new Date();
+    var today = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate();
+    $('#arrivate').val(today);
+});
+document.getElementById('datePicker').value = new Date().toDateInputValue();
