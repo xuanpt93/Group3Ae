@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="bloggrid-featurn_posts">
                     <div class="row">
-                        <div class="col-md-6 col-xl-4" *ngFor="let b of data">
+                        <div class="col-md-6 col-xl-4" *ngFor="let b of pageData">
                             <div class="bloggrid-feature-iteam">
                                 <div class="bloggrid-feature-img">
                                     <div><img class="bloggrid-img-house" src="{{b.Image}}" alt=""></div>
@@ -79,12 +79,17 @@
 
                     </div>
                 </div>
-                <div class="bloggrid-styte-buton">
+                <!-- <div class="bloggrid-styte-buton">
                     <button><</button>
                     <button>01</button>
                     <button>02</button>
                     <button>03</button>
                     <button>></button>
+                </div> -->
+                <div class="gallery-div-page">
+                    <button class="glery-btn-page" [disabled]="currentPage == 1" (click)="prepage()"><i class="fas fa-chevron-left"></i></button>
+                    <button class="glery-btn-page" [ngClass]="{ active: i+1 == currentPage }" (click)="loadPaginate(i+1)" *ngFor="let n of pages; let i = index">{{i+1}}</button>
+                    <button class="glery-btn-page" [disabled]="currentPage == 3" (click)="nextpage()"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </div>
