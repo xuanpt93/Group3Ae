@@ -55,7 +55,7 @@
             <div class="container">
                 <div class="rg-featurn_posts">
                     <div class="row">
-                        <div class=" col-md-6 col-xl-4 " *ngFor="let r of data">
+                        <div class=" col-md-6 col-xl-4 d-flex" *ngFor="let r of pageData">
                             <div class="rg-feature-iteam">
                                 <div class="rg-feature-img">
                                     <div><img class="rg-img-house" src="{{r.Image}}" alt=""></div>
@@ -99,16 +99,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="rg-styte-buton">
+                <!-- <div class="rg-styte-buton">
                     <button>&lt;</button>
                     <button>01</button>
                     <button>02</button>
                     <button>03</button>
                     <button>></button>
+                </div> -->
+                <div style="text-align: center;">
+                    <button href="javascript:void(0)" [disabled]="currentPage ==1" (click)="prevpage()">prev</button>
+                    <button href="javascript:void(0)" [ngClass]="{' active': (i+1) == currentPage}" (click)="loadPaginate(i+1)" *ngFor="let n of pages; let i= index">{{i+1}}</button>
+                    <button href="javascript:void(0)" [disabled]="currentPage == totalPage" (click)="nextpage()">next</button>
                 </div>
             </div>
         </div>
     </main>
 </div>
-<a routerLink="create">create</a>
+
 <router-outlet></router-outlet>

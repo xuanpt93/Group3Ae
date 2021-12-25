@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute, RouterLinkActive } from '@angular/router';
+import { HomeService } from '../services/home.service';
 import { RoomDetailService } from '../services/room-detail.service';
 import { RoomGribService } from '../services/room-grib.service';
 
@@ -28,25 +29,27 @@ data2: any[] = [
 
 ]
 data1:any;
-  constructor(
-    private roomSever: RoomGribService,
+  constructor(private roomSever: RoomGribService,
     private router: ActivatedRoute,
-    private roomDetail: RoomDetailService) { }
+    private roomDetail: RoomDetailService,
+    private homeService: HomeService) { }
 
   ngOnInit(): void {
     const id = this.router.snapshot.params['id'];
     this.load();
     this.loadDitail();
     this.roomSever.findId(id).subscribe(res => this.data1 = res);
+    this.homeService.findId(id).subscribe(res => this.data1 = res);
+
   }
   eventEmitter (id: number): void{
     this.clickBuy.emit(id);
   }
 
 load(){
-  // this.roomSever.getFormApi('http://localhost:3000/rooom').subscribe(xuanpham => {
-  //   this.data = xuanpham;
-  // })
+  this.roomSever.getFormApi('http://localhost:3000/rooom').subscribe(xuanpham => {
+    this.data = xuanpham;
+  })
 
 }
 loadDitail(){
