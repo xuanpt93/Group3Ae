@@ -130,16 +130,16 @@
                     </a>
                     <ul class="dropdown-menu dropdown-shopping dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li>
-                            <a *ngFor="let m of data" class="dropdown-item ">
+                            <a *ngFor="let m of data" class="dropdown-item " style="border-bottom: 1px solid red;">
                                 <div class="crad-drop">
                                     <div class="carts-roomgrid-img">
                                         <img src="{{m.Image}}" alt="">
                                     </div>
                                     <div carts-roomgrid-price>
-                                        {{m.price}}
+                                        {{m.rooom.price}}
                                     </div>
                                     <div carts-roomgrid-name>
-                                        {{m.name}}
+                                        {{m.rooom.name}}
                                     </div>
                                 </div>
                             </a>

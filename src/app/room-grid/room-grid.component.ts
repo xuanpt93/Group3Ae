@@ -12,7 +12,7 @@ import { RoomGribService } from '../services/room-grib.service';
 export class RoomGridComponent implements OnInit {
 
   @Output() clickBuy: EventEmitter<any> = new EventEmitter();
-  carts:any[]=[];
+  carts:any [] = [];
   data:any[]=[];
   pageSize: number= 9 ;
   totalPage: number =0;
@@ -24,22 +24,23 @@ export class RoomGridComponent implements OnInit {
   ngOnInit(): void {
     this.load();
   }
-  eventEmmit(id: number): void {
-    this.clickBuy.emit(id)
-  }
   load(){
     // this.data = this.proServices.get();
     this.roomServer.getFormApi('http://localhost:3000/rooom').subscribe(response => {
       this.data = response;
       this.loadPaginate(1);
+      this.carts = this.data;
     });
   }
   buy(rooom: any){
-    var carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+
+    this.carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+
       const itemcart ={
         rooom: rooom,
         quantity :1
       };
+
       // kiểm tra xem có sản phẩm nào trong giỏ hay chưa
       let flag = false;
      this.carts.map(x => {
@@ -48,12 +49,13 @@ export class RoomGridComponent implements OnInit {
           flag= true;
         }
         return x;
-      });
+      })
       if(!flag){
-        carts.push(rooom);
+        this.carts.push(itemcart,rooom);
+
       }
       // lưu giỏ hàng vào storage
-      localStorage.setItem('carts', JSON.stringify(carts));
+      localStorage.setItem('carts', JSON.stringify(this.carts));
       this.clickBuy.emit();
   }
   // buy(rooom:any){
@@ -71,7 +73,6 @@ export class RoomGridComponent implements OnInit {
     let end = start + this.pageSize;
     this.pageData= this.data.slice(start, end);
     this.currentPage = page;
-
   }
   prevpage(): void {
     this.currentPage --;

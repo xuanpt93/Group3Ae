@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { RoomdetailComponent } from '../roomdetail/roomdetail.component';
 import { HomeService } from '../services/home.service';
@@ -9,6 +9,7 @@ import { HomeService } from '../services/home.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  @Output() clickBuy: EventEmitter<any> = new EventEmitter();
   content3:any[]=[
       {
         id: 1,
@@ -44,6 +45,12 @@ export class HomeComponent implements OnInit {
     this.homeService.getFormApi('http://localhost:3000/home').subscribe(dung=>{
       this.data = dung;
     });
+  }
+    buy(home:any){
+    var carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+    carts.push(home);
+      localStorage.setItem('carts', JSON.stringify(carts));
+      this.clickBuy.emit();
   }
 
 }

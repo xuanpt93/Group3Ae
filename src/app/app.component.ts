@@ -18,10 +18,9 @@ export class AppComponent {
   onActivate(componentRef:any){
     if(componentRef instanceof RoomGridComponent){
       componentRef.clickBuy.subscribe(() =>{
-        this.dataCarts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+        this.dataCarts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [] ;
         this.number ++;
       });
     }
-
   }
 }
