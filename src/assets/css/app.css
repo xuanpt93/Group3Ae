@@ -1594,6 +1594,10 @@ a {
     position: relative;
 }
 
+.square-top-room img {
+    height: 569px;
+}
+
 .text-col8-room {
     position: relative;
     top: -200px;
@@ -1685,8 +1689,9 @@ a {
 .main-buttom button {
     color: #fff;
     border: none;
+    position: relative;
     border-radius: 4px;
-    margin-top: 20px;
+    margin-top: 70px;
     padding: 5px;
     font-size: 17px;
     background: #fea116;
@@ -3039,6 +3044,10 @@ a {
     padding: 3px 10px;
     color: #ffff;
     border: none;
+}
+
+.rg-feature-iteam-tranform2 button a:hover {
+    color: #fff !important;
 }
 
 .rg-feature-iteam-tranform2 {

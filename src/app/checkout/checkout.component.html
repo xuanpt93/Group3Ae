@@ -10,9 +10,9 @@
         </tr>
         <tr *ngFor="let item of data; let i = index ">
             <td>{{i+1}}</td>
-            <td>{{item.rooom.name}}</td>
-            <td>{{item.rooom.price}}</td>
-            <td><img src="{{item.rooom.Image}}" alt=""></td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td><img src="{{item.Image}}" alt=""></td>
             <!-- checkout -->
             <td>
                 <button class="btn-checkout" (click)="deleteCarts(i)">Dell</button><br>

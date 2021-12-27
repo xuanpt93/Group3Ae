@@ -29,41 +29,39 @@ export class RoomGridComponent implements OnInit {
     this.roomServer.getFormApi('http://localhost:3000/rooom').subscribe(response => {
       this.data = response;
       this.loadPaginate(1);
-      this.carts = this.data;
     });
   }
-  buy(rooom: any){
+  // buy(rooom: any){
 
-    this.carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+  //   this.carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+  //     const itemcart ={
+  //       rooom: rooom,
+  //       quantity :1
+  //     };
 
-      const itemcart ={
-        rooom: rooom,
-        quantity :1
-      };
+  //     // kiểm tra xem có sản phẩm nào trong giỏ hay chưa
+  //     let flag = false;
+  //    this.carts.map(x => {
+  //       if(x.rooom.id == rooom.id){
+  //         x.quantity += 1;
+  //         flag= true;
+  //       }
+  //       return x;
+  //     })
+  //     if(!flag){
+  //       this.carts.push(itemcart,rooom);
 
-      // kiểm tra xem có sản phẩm nào trong giỏ hay chưa
-      let flag = false;
-     this.carts.map(x => {
-        if(x.rooom.id == rooom.id){
-          x.quantity += 1;
-          flag= true;
-        }
-        return x;
-      })
-      if(!flag){
-        this.carts.push(itemcart,rooom);
-
-      }
-      // lưu giỏ hàng vào storage
-      localStorage.setItem('carts', JSON.stringify(this.carts));
-      this.clickBuy.emit();
-  }
-  // buy(rooom:any){
-  //   var carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
-  //   carts.push(rooom);
-  //     localStorage.setItem('carts', JSON.stringify(carts));
+  //     }
+  //     // lưu giỏ hàng vào storage
+  //     localStorage.setItem('carts', JSON.stringify(this.carts));
   //     this.clickBuy.emit();
   // }
+  buy(rooom:any){
+    var carts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts') || '[]') : [];
+    carts.push(rooom);
+      localStorage.setItem('carts', JSON.stringify(carts));
+      this.clickBuy.emit();
+  }
   loadPaginate(page: number){
     // tính tổng số trang
     this.totalPage = Math.ceil(this.data.length / this.pageSize);

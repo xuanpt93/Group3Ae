@@ -74,7 +74,6 @@ pages: any[] = [];
 
   ngOnInit(): void {
     this.load();
-
   }
   load(){
 
